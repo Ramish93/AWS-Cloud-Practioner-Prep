@@ -69,7 +69,28 @@ platform as a service, this is in middle of them both. this means we are given a
      ![finance expence](./assets/finance.png?raw=true "inance expence")
   2. OpEx operating expediture. day to day expenditures after building data center, maintenance, connectivity and utilities.
 
-* funding b/w cloud and data center
-* Utilizing AWS toolls for cost.
-* make a case to move to cloud.
-* explore AWs cost.
+## organizations and optimizations of AWS cost:
+
+- AWS cost explorer: a tool in AWS with UI.
+  - it provides breakdown via
+    1. by Service
+    2. cost Resource tags
+    - there are predefined reports make you can download with your data.
+    - it also tries to predic cost for upcoming 3 months.
+    - gives recommendations for cost optimizations by UI or by API.
+- AWS Budgets:
+  - utilizes data from cost explorer and track all AWS services, track cost per service, service usage, reserved instance utilization, coverage and saving plans.
+- Cost planing tools:
+
+  - AWS TCO (total cost of ownership) calculator. for organizations considering from their own data center to cloud. help make a case to transition to cloud. Based on a lot of customer feedback, the AWS TCO Calculator has been replaced by the AWS Pricing Calculator.
+  - AWS simple Monthly Calculator **now deprecated and called AWS pricing calculator:** calculate specific workload in cloud. like your datacenter use 5 servers you can add them here and it will tell monthly cost.
+
+- How to organize use of aws:
+
+  - Resources Tags: just matadata that we attach to our AWS resourses. they include a name and optional value, like in your datacenter allocating 5 servers to social webapp and naming them social app as tag name or dev and production servers etc.
+
+    - You can make an allocation report in aws and it will include the cost by active tags.
+
+  - AWS Organizations: multiple accounts under single master account. like different departments (dev, production) or different applications can run on seperate accounts under same master account.
+    - Consolidated billing: this will give bill of each account under organization in detail.
+    - you can also standerdize logging or security etc across all accounts within organization.

@@ -94,3 +94,24 @@ platform as a service, this is in middle of them both. this means we are given a
   - AWS Organizations: multiple accounts under single master account. like different departments (dev, production) or different applications can run on seperate accounts under same master account.
     - Consolidated billing: this will give bill of each account under organization in detail.
     - you can also standerdize logging or security etc across all accounts within organization.
+
+## Support your AWS infrastructure:
+
+- AWS support is the service allows you to file support requests to aws resourses. it allows you to get support for aws resourses running in cloud. its in different tiers based on your scope.. it sudevides into two services.
+  - AWS personal Health dashboard:
+    - provides alerts and remediations guidence with aws is experience an event that may effect you. like a power shortage or cyber attack. this is where you'll know about it.
+  - Aws trusted advisor:
+    - automated tool to check aws usage against best practice. so always impliment solutions as trusted advisor provides. different checks are provided according to the support tier plan. but all customers get access to 7 core support checks with advisor. the checks are divided into 5 parts.
+      Cost optimizations, Performance, Security, Fault tolerance, Service limits.
+
+* AWS support plan tiers:
+  the differenses in tiers basically falls into 4 catagories, cost, communication Method, Response time, Type of guidence.
+  - AWS Basic support (no cost):
+    its for all customers, you have 7 core check with trusted advisor. 24x7 customers service, docs, white papers etc. however you dont get access to engineers for technical-implimentation.
+  - AWS developer support(29$ per month but tied to usage):
+    for individual devs tring to run workload in aws.along with basic support you get bussiness hours support access to engineers. its limited to one contact per developer and reply is late.
+  - AWS bussiness support(100$ permonth but tied to usage):
+    along with developer support, full set of trusted advisor checks. 24x7 access to phone, email and chat access to engineers. it lets all of your people to have access and file support request not just root user. you are also allowed to deploy third party software in aws with support.
+
+- aws trusted advisor recommendations
+- personal health dashboard.

@@ -30,13 +30,25 @@ platform as a service, this is in middle of them both. this means we are given a
 
 - there are three.
 
-1. Aws Regions:
+1.  Aws Regions:
 
-   - each reagion is located in specific geographic location. it could be centered around like singapore etc. each location has cluster of data centers that work together. AWS has 22 different regions. some public some not.
-   - these reagions operate with smaller units called **avalability zones .** they consist of one or more data centers. there are multiple availability zones included with each aws region. this means at minimum each aws reagion has two availability zones. and at minimum each availability zone has one data center. availability zones are located in the aws reagion. globally 69 availability zones have been launched.
-     in US there are 6 regions 4 public 2 govCloud for government. each region has 3,4 availability zones.
+    - each reagion is located in specific geographic location. it could be centered around like singapore etc. each location has cluster of data centers that work together. AWS has 22 different regions. some public some not.
 
-     > availibility means an app is fulfilling its intended bussiness purposes, apps with high availability are built where a single failure wont lessen applications ability to fully operation. which means for an app to be high avalibility we need to be deployed in multiple availibility zones. they are normally mission critical applications.
+2.  avalability zones:
 
-- AWS avalability zones
-- Edge Locations.
+- these reagions operate with smaller units called **avalability zones .** they consist of one or more data centers. there are multiple availability zones included with each aws region. this means at minimum each aws reagion has two availability zones. and at minimum each availability zone has one data center. availability zones are located in the aws reagion. globally 69 availability zones have been launched.
+  in US there are 6 regions 4 public 2 govCloud for government. each region has 3,4 availability zones.
+
+           > availibility means an app is fulfilling its intended bussiness purposes, apps with high availability are built where a single failure wont lessen applications ability to fully operation. which means for an app to be high avalibility we need to be deployed in multiple availibility zones within an AWS region. they are normally mission critical applications.
+
+           1. naming convention of availibility zones is as follows: eg name is us-east-2a
+
+           - us is area
+           - east is sub area - 2 a number because there could be multiple regions within that area.
+           - then alpha bet to show the availability zone.
+             the region name would be us-east-2 but a is avalability zone.
+
+- here are some AWS regions (without avalability zones):
+  ![aws Regions](./assets/awsRegions.png?raw=true "awsRegions")
+
+* Edge Locations.

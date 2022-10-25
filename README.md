@@ -32,11 +32,11 @@ platform as a service, this is in middle of them both. this means we are given a
 
 1.  Aws Regions:
 
-    - each reagion is located in specific geographic location. it could be centered around like singapore etc. each location has cluster of data centers that work together. AWS has 22 different regions. some public some not.
+    - each reagion is located in **specific/multiple geographic location.** it could be centered around like singapore etc. each location has cluster of data centers that work together. AWS has 22 different regions. some public some not.
 
 2.  avalability zones:
 
-- these reagions operate with smaller units called **avalability zones .** they consist of one or more data centers. there are multiple availability zones included with each aws region. this means at minimum each aws reagion has two availability zones. and at minimum each availability zone has one data center. availability zones are located in the aws reagion. globally 69 availability zones have been launched.
+- these reagions operate with smaller units called **avalability zones .** they consist of one or more data centers. there are multiple availability zones included with each aws region. this means at minimum each aws reagion has two availability zones. and at minimum each availability zone has one data center. availability zones are located in the aws reagion. globally 69 availability zones have been launched. almost every service in AWS is connected to these availability zones or regions.
   in US there are 6 regions 4 public 2 govCloud for government. each region has 3,4 availability zones.
 
            > availibility means an app is fulfilling its intended bussiness purposes, apps with high availability are built where a single failure wont lessen applications ability to fully operation. which means for an app to be high avalibility we need to be deployed in multiple availibility zones within an AWS region. they are normally mission critical applications.
@@ -51,4 +51,24 @@ platform as a service, this is in middle of them both. this means we are given a
 - here are some AWS regions (without avalability zones):
   ![aws Regions](./assets/awsRegions.png?raw=true "awsRegions")
 
-* Edge Locations.
+3. Edge Locations:
+
+- Edge Locations are primarily used for caching of the data to provide better user experience with low latency, where as availibility zones are used for hosting servers, websites, applications, softwares, Big Data processing, analytics and a wide variety of use cases. Edge location are used as a part of global CDN (content delivery network). there are 2 different services that leverage these edge locations.
+
+  1. Amazon cloud front: its AWS global CDN.a web service that speeds up distribution of your static and dynamic web content, such as . html, . css, . js, and image files, to your users.
+  2. Amazon Route 53: Amazons DNS service.a highly available and scalable Domain Name System (DNS)
+
+  there are 200 different locaitons that have edge locations. so this is most common part of infrastructure AWS has. it allows AWS to serve content from locations closest to users. so if we produce content in stockholm because of edge locations out content is able to have a server in singapore if people view it there.
+
+## Understanding Cloud Economics:
+
+- two important terms are
+  1. CapEx (capitalized expenditures) like when building a data center upfront investing cost of building, server equipment etc which is an asset for company. images illustrating usage of private data center with an app and 2nd to show if you need more capacity.
+     ![CapEx](./assets/CapEx.png?raw=true "CapEx")
+     ![CapEx1](./assets/CapEx1.png?raw=true "CapEx1")
+  2. OpEx operating expediture. day to day expenditures after building data center, maintenance, connectivity and utilities.
+
+* funding b/w cloud and data center
+* Utilizing AWS toolls for cost.
+* make a case to move to cloud.
+* explore AWs cost.

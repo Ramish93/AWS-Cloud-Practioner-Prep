@@ -66,6 +66,7 @@ platform as a service, this is in middle of them both. this means we are given a
   1. CapEx (capitalized expenditures) like when building a data center upfront investing cost of building, server equipment etc which is an asset for company. images illustrating usage of private data center with an app and 2nd to show if you need more capacity.
      ![CapEx](./assets/CapEx.png?raw=true "CapEx")
      ![CapEx1](./assets/CapEx1.png?raw=true "CapEx1")
+     ![finance expence](./assets/finance.png?raw=true "inance expence")
   2. OpEx operating expediture. day to day expenditures after building data center, maintenance, connectivity and utilities.
 
 * funding b/w cloud and data center

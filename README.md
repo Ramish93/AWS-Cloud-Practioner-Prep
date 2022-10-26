@@ -204,11 +204,31 @@ these services are for organizations who wanna move to cloud.
    - Provides discount over on-demand method model if you commit to specific period of time 1 or 3 years.
    - Provides capacity reservation for instance type that you specify so it will stay with you in time that you specify.
    - Reserved instance types:
-     1. standered: highest discount, works for steady workloads. so if want bigger instance you are locked in ofr 1 or 3 year and you cant change.
+     1. standered: highest discount, works for steady workloads. so if want bigger instance you are locked in for 1 or 3 year and you cant change.
      2. Convertable reserved instances: allows us to convert attributes equal value to what we already have.
      3. scheduled instances: If you have predictable but not-steady workload you can use this. like during weekend you have more traffic so you can use this.
      - here is a cost model for standered Reserved instances
        ![ EC2 SRIcost](./assets/SRIcost.png?raw=true "EC2 SRIcost")
-3. Saving plan
-4. Spot instances.
-5. Dedicated Host instances.
+3. **Saving plan**
+
+- similar to reserved instances but it supports compute with EC2, fargate, and lambda.
+- unlike reserved instances it does not reserve capacity but there is a way to do it.
+- 72% saving on it.
+- comes in 1 or 3 year terms.
+
+4. **Spot instances.**
+
+- this is only for workloads that can start and stop without effecting what you are trying to do. but great savings.
+- it really lets you leverage excess EC2 compute capacity that might exists in availibility zone.
+- provides upto **90% discount** over on-demand pricing.
+- there is a market price for instance type per availability zone.
+- you request instance if you bid id higher AWS will launch your app.
+- if spot price exceeds your instance is terminated. but you get 2min notification prior to termination.
+
+5. **Dedicated Host instances.**
+
+- gives you dedicated physical server in datacenter, most expencive option.
+- if you have a per-server licencing model. and you want to abile by terms of licence.
+- also some compliance require a dedicated host. so in that case too use this.
+  ![EC2 buy Options](./assets/EC2buyOptions.png?raw=true "EC2 buy Options")
+  ![EC2 buy Options](./assets/EC2buyOptions1.png?raw=true "EC2 buy Options")

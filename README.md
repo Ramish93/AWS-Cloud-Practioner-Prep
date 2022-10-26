@@ -127,3 +127,22 @@ these services are for organizations who wanna move to cloud.
 - Aws profesional service: if you wanna work with AWS people.
 
 # Understanding AWS core Services (2nd blog):
+
+### Intracting with AWS Services:
+
+1. AWS console:
+   - to leverage browser to config aws.
+     - it can interact with all 150+ AWS services. with mobile app aswell. just like i used making account, trusted advisor etc.
+     - usage: testing new services or getting a hang of it.
+2. AWS CLI:
+   - CLI for administrating AWS resourses.
+   - most of all tasks done with console can be done with cli, supports mac, windos and linux.
+   - usage: for repeated task or automation.
+   - here is command to get users from CLI:
+     ![cli getusers](./assets/cligetusers.png?raw=true "cli getusers")
+3. AWS SDK:
+   - programming access to manage AWS resources.
+     - this is where we use a language to script the process how we intract with Aws.
+     - usage: for repeated task or automation + if you have an custom app adk would be great choice to let that app intract with AWS services.
+     - languages support:
+       ![ sdk languages](./assets/sdklanguages.png?raw=true " sdk languages")

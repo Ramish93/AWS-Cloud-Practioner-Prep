@@ -165,7 +165,7 @@ these services are for organizations who wanna move to cloud.
 
 - The ones that are included in exam. this is kind of service that lets you leverage tha virtual machines like database,web server, or data calulations/statistics etc.
 
-1. Amazon EC2 or elastic compute clode.
+1. Amazon EC2 or elastic compute clode. (imp for exam)
    - is a web service that provides resizeable compute capacity in cloud, designed to make web-scale computing easier for devs.
    - sample usecase:
      - web app hosting, go in ec2 and make a server and put code there.
@@ -232,3 +232,18 @@ these services are for organizations who wanna move to cloud.
 - also some compliance require a dedicated host. so in that case too use this.
   ![EC2 buy Options](./assets/EC2buyOptions.png?raw=true "EC2 buy Options")
   ![EC2 buy Options](./assets/EC2buyOptions1.png?raw=true "EC2 buy Options")
+- here is an example of prices for Reserved Instances. as you can see the saving in it.
+  ![EC2 spotPrice ](./assets/spotPrice.png?raw=true "EC2 spot Price")
+
+- here is an example of prices for Spot Instances.
+  ![EC2 RI price](./assets/EC2RIprice.png?raw=true "EC2 RI price")
+
+- watched how EC2 instance is created and launched.
+- ### AWS Elastic beanstalk is created and launched.
+  - it automates the process of deploying and scaling the workloads on EC2.(PaaS)
+  - its more like platform as a service
+  - Unlike EC2 where you can do anything you need if you deploy a server. here you have to work with a specific set of technologies.
+  - it leverage existing AWS services. only pay for the other services.
+  - its kinda a new category because those services are only helping to connect or deploy the elastic Beanstalk.
+
+**- why use elastic beanstalk?**

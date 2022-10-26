@@ -146,3 +146,17 @@ these services are for organizations who wanna move to cloud.
      - usage: for repeated task or automation + if you have an custom app adk would be great choice to let that app intract with AWS services.
      - languages support:
        ![ sdk languages](./assets/sdklanguages.png?raw=true " sdk languages")
+
+### using AWS console:
+
+- Root User: is special kind of user, its the user that first created account on AWS when you started using AWS. it has permissions like support tier and deleting the account.
+  - root user can auth two factor login, they can see billing and organization in dashboard, and region change,
+  - if you change reagion, new resourses will be launched in new reagion, if reagion doesn't matter for a service like Route 53 it will say global at region selection menu.
+- IAM user:
+
+### using AWS Cli:
+
+- You dont need to know how to config and use CLI to pass exam, but its a good skill
+
+- to config CLI go to settings and credentials in console => access keys => create access and private keys. then follow the instructions in docs to install CLI.
+- Root user keys should not be create use IAM user instead, its a security risk. but for one time use and deleting its fine.

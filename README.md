@@ -137,7 +137,7 @@ these services are for organizations who wanna move to cloud.
 2. AWS CLI:
    - CLI for administrating AWS resourses.
    - most of all tasks done with console can be done with cli, supports mac, windos and linux.
-   - usage: for repeated task or automation.
+   - usage: for repeated task or automation. you can write custom scripts for these automations.
    - here is command to get users from CLI:
      ![cli getusers](./assets/cligetusers.png?raw=true "cli getusers")
 3. AWS SDK:
@@ -160,3 +160,55 @@ these services are for organizations who wanna move to cloud.
 
 - to config CLI go to settings and credentials in console => access keys => create access and private keys. then follow the instructions in docs to install CLI.
 - Root user keys should not be create use IAM user instead, its a security risk. but for one time use and deleting its fine.
+
+## Compute services:
+
+- The ones that are included in exam. this is kind of service that lets you leverage tha virtual machines like database,web server, or data calulations/statistics etc.
+
+1. Amazon EC2 or elastic compute clode.
+   - is a web service that provides resizeable compute capacity in cloud, designed to make web-scale computing easier for devs.
+   - sample usecase:
+     - web app hosting, go in ec2 and make a server and put code there.
+     - Batch processing: if your org produce millions of lines of slaes data, you can process it before you analize it.
+     - web service endpoint. to be an api server, take web-services and launch them in cloud, let other apps access them.
+     - Desktop in cloud: like launch a windows instance in cloud EC2 and access that with remote desktop.
+
+- **Instance types:** Instances in AWS are basically virtual environments. These virtual environments are isolated from the underlying base OS. it defines processor, memory, and storage type that is avalable any servers that are launch with that instance type. so servers and more are connected to an instance type. you cant go to server and change instance types like need more memory in it or etc. so make good choices when creating instance type.
+- instance types are across different catagories.
+
+  - general purpose: for most of workload put in cloud.
+  - compute, memory, storage optimized: they are three different catagories, eg. if we launch an inmemory DB we choose in-memory instance type.
+  - accelerated computing: like for machine learning because you have GPU (graphic process unit) with it.
+  - prices is based on instance type. more resources more price.
+  - some instance type families have uniqure things with them, like GPU or specialized storage with them.
+  - Instance type price , may change with regions or time. 4th has modern GPU with it and 5th has specialized storage hence the price.
+    ![ EC2 price](./assets/EC2price.png?raw=true "EC2 price")
+
+- Root device type:
+- there are two different root devices in EC2.
+
+  1. Instance Store:
+     - storage thats physically attached to host that virtual server is running on for a short amount of time meaning if you shut down your instance store server data will be lost.
+     - Elastic Block Store (EBS): prisistent storage that exists seperately from host that v.server is running on, if you shut down data won't be lost. most of you work in done on EBS unless a specific reason.
+
+- Amazon Machine Images (AMI):
+- its a template for ec2 service that includes configs, operating systems, data that would go on that specific instance. there are many AMIs that you can leverage.
+- they can be shared across accounts, so if you org has specific version of ubuntu linux that you want to modify in certain way for security reasons, and you wanna attach one storage to it these are example of configs you can make.
+- you can create you custom AMIs, there is AWS market-place for available AMIs too.
+
+### EC2 purchase Type:
+
+1. On demand
+   - default instanct if you launch without choosing. its on demand model, so pay as you go.
+2. Reserved instances:
+   - Provides discount over on-demand method model if you commit to specific period of time 1 or 3 years.
+   - Provides capacity reservation for instance type that you specify so it will stay with you in time that you specify.
+   - Reserved instance types:
+     1. standered: highest discount, works for steady workloads. so if want bigger instance you are locked in ofr 1 or 3 year and you cant change.
+     2. Convertable reserved instances: allows us to convert attributes equal value to what we already have.
+     3. scheduled instances: If you have predictable but not-steady workload you can use this. like during weekend you have more traffic so you can use this.
+     - here is a cost model for standered Reserved instances
+       ![ EC2 SRIcost](./assets/SRIcost.png?raw=true "EC2 SRIcost")
+3. Saving plan
+4. Spot instances.
+5. Dedicated Host instances.

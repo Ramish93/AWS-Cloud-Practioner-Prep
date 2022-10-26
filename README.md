@@ -187,9 +187,9 @@ these services are for organizations who wanna move to cloud.
 - Root device type:
 - there are two different root devices in EC2.
 
-  1. Instance Store:
-     - storage thats physically attached to host that virtual server is running on for a short amount of time meaning if you shut down your instance store server data will be lost.
-     - Elastic Block Store (EBS): prisistent storage that exists seperately from host that v.server is running on, if you shut down data won't be lost. most of you work in done on EBS unless a specific reason.
+  - Instance Store: storage thats physically attached to host that virtual server is running on for a short amount of time meaning if you shut down your instance store server data will be lost.
+
+  - Elastic Block Store (EBS): prisistent storage that exists seperately from host that v.server is running on, if you shut down data won't be lost. most of you work in done on EBS unless a specific reason.
 
 - Amazon Machine Images (AMI):
 - its a template for ec2 service that includes configs, operating systems, data that would go on that specific instance. there are many AMIs that you can leverage.
@@ -246,4 +246,42 @@ these services are for organizations who wanna move to cloud.
   - it leverage existing AWS services. only pay for the other services.
   - its kinda a new category because those services are only helping to connect or deploy the elastic Beanstalk.
 
-**- why use elastic beanstalk?**
+#### - why use elastic beanstalk?
+
+- it has monitoring using other small services but it pull monitoring info in.
+- deployment: when you have big apps, there are multiple servers and figure out how to loadbalance them, so it is handled by elastic Beanstalk.
+- it handles scaling. we can also config it.
+- EC2 customization: it allows you to add customization to servers where your app is running.
+
+- **Use cases for elastic Beanstalk**
+- deploying app with minimum knowledge of other services, like config servers, scaling groups, setting scaling rules, etc. you can rely on electric beanstalk to do for you
+- reduce overall maintenance.
+- few customize the environments. other hand if you really like to be precise in tech or versions then EC2 is ideal.
+
+#### AWS Lambda:
+
+- you can run code without provisioning or managing servers. only pay for compute time you use. you run your code for virtually any type of application or backend service with 0 administration.
+- on high level it does that but you have to allocate memory for it. from 128 to 3k gb.
+- integrate with AWS services easily, enables event driven workflows,
+
+- Advanteges of Lambda:
+  - reduced maintenance requirments and cost.
+  - enables fault tolerance without building it in. no single point of failure plus multiple availability zones.
+  - scale based on demand,
+  - pricing on usage.
+
+### Network and content delivery services:
+
+1. Amazon route 53
+   -
+2. Amazon VPC vertual private cloud(imp for exam)
+   - a logically isolated section of AWS cloud where you can launch say, EC2 or anyother virtual network and its your portion of cloud.
+   - in VPC you support ipv4 and 1pv6.
+     - you can config ip address, subnet, route tables, network gateways.
+     - supports both private and public subnets. so if you want areas of your VPC not acessable to internet or you dont want. you can do both.
+     - Enables connection to your data center.
+     - can connect to other Vpcs.
+3. AWS direct connect
+4. Amazon API Gateway
+5. Amazon CloudFront
+6. Elastic Load Balancing

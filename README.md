@@ -368,14 +368,55 @@ these services are for organizations who wanna move to cloud.
      - you can config to delete certain versions of files, like old ones after a configurable period of time
      - S3 Transfer Acceleration: it enables you to upload files faster because of edge locations as part of amazon cloud front.
 2. Amazon S3 Glacier:
+
    - its designed to archive data with S3 as a separate storage class. eg. your org has data that you wont access regularly but you need to store it for long time. this is usecase for s3 glacier.
    - it offers configurable retrival times. you pay more/ less for quick or slow retirival.
    - you can use lifecycle of s3 to transition data here.
+   - you can upload data here with AWS console but to retrieve you have to use programming.
    - it has two classes:
      1. S3 glacier:
      2. S3 glacier deep archive
         ![S3 glacier price](./assets/S3glacier.png?raw=true "S3 glacier price")
+
 3. Amazon EBS Elastic Blast Store:
+   - it is bassically presistent block storage for Amazon EC2.
+   - its block storage designed to connect single EC2 instance that can scale to support petabytes of data and multiple volume types based on need.
+     - data is durable.
+     - allows users to take snapshots of data. like if you want to have data in backup aswell.
+     - make sure to config encryption.
+     - it provides multiple volums
+       1. general purpose SSD
+          - its a cost effective type designed for general workloads.
+       2. provisionaed IOPS SSD
+          - its a high performance volume. for intence usecase.
+       3. Cold HDD
+          - less frequently accessed workloads.
+       4. Througput optimized Hard disk drives
+          - its for if we have frequently accessed data.
 4. EFS Amazon Elastic File System:
+
+   - EBS is an option to attach storage to EC2 instance but EFS is anthoer approach.
+   - its a fully managed NFS file system. designed specificly for linux workload.
+   - like EBS it supports petabytes of data.
+   - saves data across multiple AZ.
+   - two different storage classes:
+     1. standered
+     2. infrequent access.
+   - provides configurable lifecycle rules so you can transition between two options.
+   - Unlike EBS this can be attached to multiple instances at same time.
+   - **for windows user FSx**:
+     - fully managed native windows filesystem.
+     - it gives windows features like
+       1. SMB support
+       2. Active Directory integrate
+       3. Windows NTFS
+     - uses SSD drive for low latency.
+
 5. AWS snowball
+   - how to transfer large amount of data two AWS without public internet?
+   - its a data migration service. usually petabytes of data physically. meaning you get a physical device from AWS to connect to your network and upload.
 6. Aws snowmobile.
+   - if you wannt physically migrate exabytes of data. it will be like a shiping container size device.
+
+- comparison of these 2:
+  ![S3 glacier price](./assets/S3glacier.png?raw=true "S3 glacier price")

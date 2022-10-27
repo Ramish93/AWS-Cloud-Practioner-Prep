@@ -564,6 +564,6 @@ these services are for organizations who wanna move to cloud.
   - configs are going to be code and they will deploy on same server, chef and puppet will manage that for you
   - works hybrid, you can work with it on cloud and in own datacenter.
   - its make of 3 subservices:
-    1. AWS opsworks Chef Automate: configurations management service that utilizes chefs automate.
-    2. AWS opsworks for puppet enterprise: configurations management service that utilizes puppets automate.
+    1. AWS opsworks Chef Automate: configurations management your app that utilizes chefs automate.
+    2. AWS opsworks for puppet enterprise: configurations management your app that utilizes puppets automate.
     3. AWS opsworks stacks: it allows you to manage your app in layers and you can manage them with chef recepies .

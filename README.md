@@ -514,3 +514,12 @@ these services are for organizations who wanna move to cloud.
    - charged per state along with other services that you use.
    - workflows are defined using Amazon states language.
    - out of box work with other amazon services. like compute services, lambda, database services, SQS and SNS, data processing services and machine learning services.
+
+## Management and governance services:
+
+1. AWS CloudTail
+2. AWS CloudFormation
+3. AWS Config
+4. AWS System manager
+5. AWS Control tower
+6. Amazon cloud watch

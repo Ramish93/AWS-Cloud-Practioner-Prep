@@ -315,5 +315,24 @@ these services are for organizations who wanna move to cloud.
      3. Classic load balancers
 
 - Scaling on Amazon EC2:
+
   1. Vertical scaling: or scale up. meaning scale up you instance to larger instance type with more resources. we can do it if we see that users are seeing late response on one server etc. but in this case we have to **shut server down** and move it to bigger instance type.
   2. Horizontal scaling: or scale out. add additional instances to handle demand of app. its leverage elastic load balancing.
+
+- AWS Gloabal Accelerator:
+
+  - its a networking service that sends your users traffic through amazon web services global network improveing your internet user performance by upto 60%.
+  - it uses IP's and also edge locations and cloud front but its useing it from IP resolution instead of DNS.
+  - once user request reaches to edge locations instead of routing it through internet it uses AWS network. it can also route request to many AWS resources. like
+    1. NLB network load balancer.
+    2. ALB: Application Load balencer.
+    3. EC2 instances.
+    4. Elastic IP address.
+  - Performance improvements.
+
+    1. distance btween user request and initial endpoint is going to decrease because of edge location.
+    2. Traffic is optimized by using AWS network instead og public internet. it reduces latency and jitter.
+    3. Superior fault tolerance.
+
+  - Use Cases of AWS Accelerator:
+    1. if you are using non-http protocol. like UDP, VOIP like maybe UDP in gaming context VOIP if you are doing internet telephony

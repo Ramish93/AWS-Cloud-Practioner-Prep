@@ -357,7 +357,7 @@ these services are for organizations who wanna move to cloud.
      - S3 standered: its by default, its for frequently accessed data.
      - **S3 intelligent-tiering.** its only way to move your data to correct storage classes based on usage,
        - automatically moves files to different storage classes based on access.
-       - it has two different storage classes associated with: frequent andinfrequent. it will move data between these classes.
+       - it has two different storage classes associated with: frequent and infrequent. it will move data between these classes.
        - same performance as standered S3 but will be cost effective.
      - S3 standered-IA (infrequent accessed): get lower cost if data is not frequently accessed.
      - S3 one zone-IA : for not frequently accessed data but its also in just one availability zone. less cost than others.
@@ -366,7 +366,7 @@ these services are for organizations who wanna move to cloud.
      - transition can enable objects to move to another storage class based on time or delete aswell.
      - you can move objects based on usage thats only for intelligent tiering, here its based on time.
      - you can config to delete certain versions of files, like old ones after a configurable period of time
-     - S3 Transfer Acceleration: it enables you to upload files faster because of edge locations as part of amazon cloud front.
+   - S3 Transfer Acceleration: it enables you to upload files faster because of edge locations as part of amazon cloud front.
 2. Amazon S3 Glacier:
 
    - its designed to archive data with S3 as a separate storage class. eg. your org has data that you wont access regularly but you need to store it for long time. this is usecase for s3 glacier.
@@ -396,6 +396,7 @@ these services are for organizations who wanna move to cloud.
 4. EFS Amazon Elastic File System:
 
    - EBS is an option to attach storage to EC2 instance but EFS is anthoer approach.
+   - Unlike EBS this can be attached to multiple instances at same time.
    - its a fully managed NFS file system. designed specificly for linux workload.
    - like EBS it supports petabytes of data.
    - saves data across multiple AZ.
@@ -403,7 +404,6 @@ these services are for organizations who wanna move to cloud.
      1. standered
      2. infrequent access.
    - provides configurable lifecycle rules so you can transition between two options.
-   - Unlike EBS this can be attached to multiple instances at same time.
    - **for windows user FSx**:
      - fully managed native windows filesystem.
      - it gives windows features like
@@ -419,4 +419,45 @@ these services are for organizations who wanna move to cloud.
    - if you wannt physically migrate exabytes of data. it will be like a shiping container size device.
 
 - comparison of these 2:
-  ![S3 glacier price](./assets/S3glacier.png?raw=true "S3 glacier price")
+  ![S3 snow ball and mobile](./assets/snowballMobil.png?raw=true "S3 snow ball and mobile")
+
+## Database and related services:
+
+![Database and related services](./assets/DBAS.png?raw=true "SDatabase and related services")
+
+1. Amazon RDS relational Database service:
+
+   - takes platform as a service approach.
+   - fully managed service. handles provisioning and, patching, backup and recovery of your database for you which consume quiet some time.
+   - supports deployment across multiple AZ.
+   - support read replicas for some platforms. you can scale out your database for apps that are using this database.
+   - launches into a VPC.
+   - two volume types
+
+     1. general purpose SSD
+     2. Provisioned IOPS SSD.
+
+   - platform that it supports:
+     1. MySQL
+     2. postgresSQL
+     3. MariaDB
+     4. Oracle
+     5. SQL
+     6. Amazon Aurora
+        > it was created as an option for RDS, it is MySQL and postgres compatible relational database. its simple and cost efficient.
+
+2. Amazon Aurora
+3. Amazon DynamoDB:
+
+   - software as a service option.
+   - its fully managed NoSql database.
+   - you dont manage the database layer. you just use it.
+   - provides both key value pairs, and documented database.
+   - extremely low latency.
+   - it can sclae automatically based on usage or you can scale manually with configurations.
+   - DAX dynamo Accelerator. which gives you in memory chache for faster speed.
+   - can support 10 trillion reqs per day and 20million requests per second.
+   - Use Cases:
+     1. Scaling a DB is very challenging and unpredictable. so it scales automatically.
+     2. serverless archetecture. its a match.
+     3. where low latency is key, it has quick response time.

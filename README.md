@@ -517,9 +517,53 @@ these services are for organizations who wanna move to cloud.
 
 ## Management and governance services:
 
-1. AWS CloudTail
-2. AWS CloudFormation
+- this is the ecosystem of management services provided by Amazon once you launch resourses to cloud.
+
+1. AWS CloudTrail:
+   - with cloudtrail you can log, continuous monitor and retain activity from actions across aws infrastructure. it works with console, SDK and CLI.
+   - it includes this in a S3 bucket.
+   - logs event in reagions they occer.
+   - best practice, it should be enabled on all aws accounts
+   - it maybe a requirement to track account info.
+   - use cases:
+     - if its a requirement to track and log.
+     - forensic analysis, like if you had a breach and you wanna see what actions were performed to stop it and soo on.
+     - operational analysis, like what caused a crash, it will be in logs,
+     - troubleshooting
+2. AWS CloudFormation:
+   - if you have specific need for an app like 2 S3 bucket, 4 instance of EC2 etc. and you do it manually in console, maybe you make a mistake, cloudformation solves it.
+   - no addional charge.
+   - it uses templates in two formats, YAML JSON.
+   - this is infrastructure as code.
+   - manage dependencies, if one resouse must launch before other it will manage that.
+   - it detects if someone changes configs of infrastructure and tells you.
 3. AWS Config
-4. AWS System manager
-5. AWS Control tower
-6. Amazon cloud watch
+   - continuously evaluate/records your infrastructure like your configs again best practice rules they can be AWS's or you can make your own, if your infrastructure doesnt meet standerds it will give you insight how to meet them.
+   - provides configurations history for infrastructure
+   - if your getting payment information PCI-DSS are rules you must follow, it comes along with config here.
+4. AWS System manager:
+   - provides unified user interface so you view operational data from multiple AWS services, also can automate operational tasks. like common maintenance actions like update EC2 instances across 20 servers that you have or less. you would write it once and all servers will update.
+   - secure way to access server using just AWS credentials.
+   - secure way to save environment variables, like multiple apps use same key, password you can just save it here.
+5. AWS Control tower:
+   - in AWS organization you can make multiple accounts with same security, logging, make consolidated billing and best practices for that are under control tower.
+   - it centralizes users across all aws accounts.
+   - can make new AWS accounts based on template.
+   - it has guadrails which is if you want any service to never turn off you config it here.
+   - it has a decent dashboard for UI.
+6. Amazon cloud watch:
+   - provides metrics, logs, alarams for your infrastructure.
+   - collects logs, metrics like number of users in a load balancer, eventsfrom most AWS services.
+   - enables alarams based on metrics. like you can set alaram to see things are working as expected.
+   - provides visualization capabilities for matrics. charts etc and you can make custom dashboards.
+   -
+
+- AWS opsworks:
+  - its a configurations management service.
+  - provides best for both chef and puppet
+  - configs are going to be code and they will deploy on same server, chef and puppet will manage that for you
+  - works hybrid, you can work with it on cloud and in own datacenter.
+  - its make of 3 subservices:
+    1. AWS opsworks Chef Automate: configurations management service that utilizes chefs automate.
+    2. AWS opsworks for puppet enterprise: configurations management service that utilizes puppets automate.
+    3. AWS opsworks stacks: it allows you to manage your app in layers and you can manage them with chef recepies .

@@ -272,6 +272,8 @@ these services are for organizations who wanna move to cloud.
 
 ### Network and content delivery services:
 
+<!-- // do this module again -->
+
 1.  Amazon route 53
     - its a DNS. Domain name service
     - its leverages AWS edge location service.
@@ -301,7 +303,7 @@ these services are for organizations who wanna move to cloud.
    - give you moneitoring and metrics on API calls.n so you can see usage and fix bugs if any.
    - can integrate this in VPC or on-premise app.
 5. Amazon CloudFront:
-   - it leverage edge locations. its a gloabal CDN. which means there are servers around the world where you can send your content to, so that users get that content from servers closer to them.
+   - it leverage edge locations. **its a gloabal CDN.** which means there are servers around the world where you can send your content to, so that users get that content from servers closer to them.
    - supports static and dynamic content.
    - utilizes AWS Edge Location.
    - it includes security features:
@@ -322,8 +324,8 @@ these services are for organizations who wanna move to cloud.
 
 - AWS Global Accelerator:
 
-  - its a networking service that sends your users traffic through amazon web services global network improveing your internet user performance by upto 60%.
-  - it uses IP's and also edge locations and cloud front but its useing it from IP resolution instead of DNS.
+  - its a networking service that sends your users traffic through amazon web services global network improving your internet user performance by upto 60%.
+  - it uses IP's and also edge locations and cloud front but its using it from IP resolution instead of DNS.
   - once user request reaches to edge locations instead of routing it through internet it uses AWS network. it can also route request to many AWS resources. like
     1. NLB network load balancer.
     2. ALB: Application Load balencer.
@@ -332,10 +334,41 @@ these services are for organizations who wanna move to cloud.
   - Performance improvements.
 
     1. distance btween user request and initial endpoint is going to decrease because of edge location.
-    2. Traffic is optimized by using AWS network instead og public internet. it reduces latency and jitter.
+    2. Traffic is optimized by using AWS network instead of public internet. it reduces latency and jitter.
     3. Superior fault tolerance.
 
   - Use Cases of AWS Accelerator:
     1. if you are using non-http protocol. like UDP, VOIP like maybe UDP in gaming context VOIP if you are doing internet telephony,
     2. if you require Static IP not DNS resolution then you need global accelerator.
     3. if you need instant filover with highest level of high availability and best fault tolerance.
+
+## File Storage and Data Transfer services:
+
+1. Amazon S3:
+   <!-- important for exams -->
+   - one of the core services. one of the first. let you store files in large amount in buckets, buckets are unit of storage in S3.
+   - you create bucket and it will have some settings and any file that goes in it will have those settings-
+   - gives storage classes for different use cases.
+   - store data across multiple availability zones.
+   - you can send urls for stored files to anyone with permission.
+   - offers configurable rules for data life cycle.
+   - can serve as a static web host.
+   * **S3 Non-archivable storage classes:**
+     - S3 standered: its by default, its for frequently accessed data.
+     - **S3 intelligent-tiering.** its only way to move your data to correct storage classes based on usage,
+       - automatically moves files to different storage classes based on access.
+       - it has two different storage classes associated with: frequent andinfrequent. it will move data between these classes.
+       - same performance as standered S3 but will be cost effective.
+     - S3 standered-IA (infrequent accessed): get lower cost if data is not frequently accessed.
+     - S3 one zone-IA : for not frequently accessed data but its also in just one availability zone. less cost than others.
+   - S3 lifecycle policies:
+     - object in buckets can transition and expire based on your config.
+     - transition can enable objects to move to another storage class based on time or delete aswell.
+     - you can move objects based on usage thats only for intelligent tiering, here its based on time.
+     - you can config to delete certain versions of files, like old ones after a configurable period of time
+     - S3 Transfer Acceleration: it enables you to upload files faster because of edge locations as part of amazon cloud front.
+2. Amazon S3 Glacier:
+3. Amazon EBS Elastic Blast Store:
+4. EFS Amazon Elastic File System:
+5. AWS snowball
+6. Aws snowmobile.

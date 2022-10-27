@@ -272,16 +272,39 @@ these services are for organizations who wanna move to cloud.
 
 ### Network and content delivery services:
 
-1. Amazon route 53
-   -
+1.  Amazon route 53
+    - its a DNS. Domain name service
+    - its leverages AWS edge location service.
+    - its Global service not regional.
+    - highly available.
+    - Enables global resource routing. so you can send people to specific servers based on their geo-location.
+
+- whats DNS:
+  - it translates the domain names into numaric IP address, to specific address that are needed for identifying the computer service and device that are serving the content.
+
 2. Amazon VPC vertual private cloud(imp for exam)
+
    - a logically isolated section of AWS cloud where you can launch say, EC2 or anyother virtual network and its your portion of cloud.
    - in VPC you support ipv4 and 1pv6.
      - you can config ip address, subnet, route tables, network gateways.
-     - supports both private and public subnets. so if you want areas of your VPC not acessable to internet or you dont want. you can do both.
+     - supports both private and public subnets. so if you want areas of cloud like a webserver of your VPC not acessable to internet or you dont want . you can do both.
      - Enables connection to your data center.
      - can connect to other Vpcs.
+     - Private connection to many AWS services. it means if you dont want sensitive information info to go through inter net you can move it in VPC.
+
 3. AWS direct connect
+   - allows to establish a dedicated network connection easily from datacenter to your AWS app. the app wont be on internet.
 4. Amazon API Gateway
-5. Amazon CloudFront
+5. Amazon CloudFront:
+   - it leverage edge locations.
 6. Elastic Load Balancing
+   - Elasticity is defined as ability of infrastructure supporting an app to grow and contract based on usage.
+   - distributes traffic across multiple targets based on eg. which server is busier. come default with EC" ECS and Lambda.
+   - there are 3 types of load balencers:
+     1. application load balancers(ALB):
+     2. Network load balancers
+     3. Classic load balancers
+
+- Scaling on Amazon EC2:
+  1. Vertical scaling: or scale up. meaning scale up you instance to larger instance type with more resources. we can do it if we see that users are seeing late response on one server etc. but in this case we have to **shut server down** and move it to bigger instance type.
+  2. Horizontal scaling: or scale out. add additional instances to handle demand of app. its leverage elastic load balancing.

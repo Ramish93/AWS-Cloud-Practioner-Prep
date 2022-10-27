@@ -280,7 +280,8 @@ these services are for organizations who wanna move to cloud.
     - Enables global resource routing. so you can send people to specific servers based on their geo-location.
 
 - whats DNS:
-  - it translates the domain names into numaric IP address, to specific address that are needed for identifying the computer service and device that are serving the content.
+  - its basically internet phone book. this translates www.google.com to a numaric ip that computer can communicate with.
+  <!-- - it translates the domain names into numaric IP address, to specific address that are needed for identifying the computer service and device that are serving the content. -->
 
 2. Amazon VPC vertual private cloud(imp for exam)
 
@@ -297,7 +298,7 @@ these services are for organizations who wanna move to cloud.
 4. Amazon API Gateway:
    - fully managed API management service. meaning you can create APIs so other apps can call them and you can make those available. you can distribute those through cloud front.
    - it directly integrates with other AWS services.
-   - give you moneitoring and metrics on API calls.
+   - give you moneitoring and metrics on API calls.n so you can see usage and fix bugs if any.
    - can integrate this in VPC or on-premise app.
 5. Amazon CloudFront:
    - it leverage edge locations. its a gloabal CDN. which means there are servers around the world where you can send your content to, so that users get that content from servers closer to them.
@@ -308,10 +309,10 @@ these services are for organizations who wanna move to cloud.
      - AWS WAF: web application firewall.
 6. Elastic Load Balancing
    - Elasticity is defined as ability of infrastructure supporting an app to grow and contract based on usage.
-   - distributes traffic across multiple targets based on eg. which server is busier. come default with EC" ECS and Lambda.
+   - distributes traffic across multiple targets based on eg. which server is busier. come default with EC2 ECS and Lambda.
    - there are 3 types of load balencers:
      1. application load balancers(ALB):
-     2. Network load balancers
+     2. NLB: Network load balancers
      3. Classic load balancers
 
 - Scaling on Amazon EC2:
@@ -319,7 +320,7 @@ these services are for organizations who wanna move to cloud.
   1. Vertical scaling: or scale up. meaning scale up you instance to larger instance type with more resources. we can do it if we see that users are seeing late response on one server etc. but in this case we have to **shut server down** and move it to bigger instance type.
   2. Horizontal scaling: or scale out. add additional instances to handle demand of app. its leverage elastic load balancing.
 
-- AWS Gloabal Accelerator:
+- AWS Global Accelerator:
 
   - its a networking service that sends your users traffic through amazon web services global network improveing your internet user performance by upto 60%.
   - it uses IP's and also edge locations and cloud front but its useing it from IP resolution instead of DNS.
@@ -335,4 +336,6 @@ these services are for organizations who wanna move to cloud.
     3. Superior fault tolerance.
 
   - Use Cases of AWS Accelerator:
-    1. if you are using non-http protocol. like UDP, VOIP like maybe UDP in gaming context VOIP if you are doing internet telephony
+    1. if you are using non-http protocol. like UDP, VOIP like maybe UDP in gaming context VOIP if you are doing internet telephony,
+    2. if you require Static IP not DNS resolution then you need global accelerator.
+    3. if you need instant filover with highest level of high availability and best fault tolerance.

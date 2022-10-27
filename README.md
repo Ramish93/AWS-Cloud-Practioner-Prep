@@ -450,7 +450,7 @@ these services are for organizations who wanna move to cloud.
 3. Amazon DynamoDB:
 
    - software as a service option.
-   - its fully managed NoSql database.
+   - its fully managed **NoSql** database.
    - you dont manage the database layer. you just use it.
    - provides both key value pairs, and documented database.
    - extremely low latency.
@@ -463,12 +463,13 @@ these services are for organizations who wanna move to cloud.
      3. where low latency is key, it has quick response time.
 
 4. Amazon RedShift:
-   - born in a cloud scalable data warehouse service. data anylitics are good usecase for it.
+   - born in a cloud scalable data warehouse service. data anylitics, machine learning etc are good usecase for it.
    - petabytes of data-warehousing supported.
    - leverages high performance disks and columnar storage.
    - ability to fully endcrypt content of warehouse.
    - it gives a level of isolation in your VPC.
-   - redshift spectrum: it gives you ability to query exabytes of data using amazon S3.
+   - **redshift spectrum:**
+     - an suset of Redshit, it gives you ability to query exabytes of data using amazon S3.
 5. Amazon Elasticache
    - fully managed in-memory data store.
    - it has two different engines supported. Memchached and Redis which is very popular.
@@ -482,3 +483,27 @@ these services are for organizations who wanna move to cloud.
    - supports one time and continuous migration.
    - out of the box supports many databases.
    - you only pay for compute you used for migration-
+
+## App integration services:
+
+1. Amazon SNS:
+
+- Simple Notification Service.
+- fully managed pub/sub messaging service,
+- can create decoupled applications.
+- organized according to topics. pub/sub published and subscribed.
+- integration to multiple AWS services.
+- apart from you some parts of you app able to talk to each other it gives end user notifications. you can send aSMS, email or push to mobile app.
+- SNS archetecture:
+  - ![SNSarchetecture](./assets/DBAS.png?raw=true "SDatabase and related services")
+- SNS messgaes or emails are not permanent. if you dont subscribed to a topic you may never know info about it
+
+2. Amazon SQS
+   - fully managed message query service.
+   - allow you to build decoupled apps.
+   - enables to build fault tolerant apps. meaning if something happens with analytics service when we send our user data to it. the info wont be lost it will still be in queue. and when that app is up and running we can get info from queue.
+   - you can put 256kb in a message.
+   - allows messages to be stored for 14 days.
+   - two types of queues are supported with SQS.
+     1. standered queue. it can guarantee the order of items you pull off of queue.
+     2. FIFO first in first out queue. processes messages in order.

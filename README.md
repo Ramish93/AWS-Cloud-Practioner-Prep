@@ -507,3 +507,10 @@ these services are for organizations who wanna move to cloud.
    - two types of queues are supported with SQS.
      1. standered queue. it can guarantee the order of items you pull off of queue.
      2. FIFO first in first out queue. processes messages in order.
+3. AWS Step functions:
+   - serverless workflow management service.
+   - it enables oschestration of workflow through fully managed service.
+   - can support complex workflows including error handling.
+   - charged per state along with other services that you use.
+   - workflows are defined using Amazon states language.
+   - out of box work with other amazon services. like compute services, lambda, database services, SQS and SNS, data processing services and machine learning services.

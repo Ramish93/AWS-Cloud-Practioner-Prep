@@ -294,9 +294,18 @@ these services are for organizations who wanna move to cloud.
 
 3. AWS direct connect
    - allows to establish a dedicated network connection easily from datacenter to your AWS app. the app wont be on internet.
-4. Amazon API Gateway
+4. Amazon API Gateway:
+   - fully managed API management service. meaning you can create APIs so other apps can call them and you can make those available. you can distribute those through cloud front.
+   - it directly integrates with other AWS services.
+   - give you moneitoring and metrics on API calls.
+   - can integrate this in VPC or on-premise app.
 5. Amazon CloudFront:
-   - it leverage edge locations.
+   - it leverage edge locations. its a gloabal CDN. which means there are servers around the world where you can send your content to, so that users get that content from servers closer to them.
+   - supports static and dynamic content.
+   - utilizes AWS Edge Location.
+   - it includes security features:
+     - AWS shield for DDos: destributed denial of service attack.
+     - AWS WAF: web application firewall.
 6. Elastic Load Balancing
    - Elasticity is defined as ability of infrastructure supporting an app to grow and contract based on usage.
    - distributes traffic across multiple targets based on eg. which server is busier. come default with EC" ECS and Lambda.

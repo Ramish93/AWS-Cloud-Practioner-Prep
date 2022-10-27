@@ -368,6 +368,13 @@ these services are for organizations who wanna move to cloud.
      - you can config to delete certain versions of files, like old ones after a configurable period of time
      - S3 Transfer Acceleration: it enables you to upload files faster because of edge locations as part of amazon cloud front.
 2. Amazon S3 Glacier:
+   - its designed to archive data with S3 as a separate storage class. eg. your org has data that you wont access regularly but you need to store it for long time. this is usecase for s3 glacier.
+   - it offers configurable retrival times. you pay more/ less for quick or slow retirival.
+   - you can use lifecycle of s3 to transition data here.
+   - it has two classes:
+     1. S3 glacier:
+     2. S3 glacier deep archive
+        ![S3 glacier price](./assets/S3glacier.png?raw=true "S3 glacier price")
 3. Amazon EBS Elastic Blast Store:
 4. EFS Amazon Elastic File System:
 5. AWS snowball

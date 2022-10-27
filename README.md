@@ -461,3 +461,24 @@ these services are for organizations who wanna move to cloud.
      1. Scaling a DB is very challenging and unpredictable. so it scales automatically.
      2. serverless archetecture. its a match.
      3. where low latency is key, it has quick response time.
+
+4. Amazon RedShift:
+   - born in a cloud scalable data warehouse service. data anylitics are good usecase for it.
+   - petabytes of data-warehousing supported.
+   - leverages high performance disks and columnar storage.
+   - ability to fully endcrypt content of warehouse.
+   - it gives a level of isolation in your VPC.
+   - redshift spectrum: it gives you ability to query exabytes of data using amazon S3.
+5. Amazon Elasticache
+   - fully managed in-memory data store.
+   - it has two different engines supported. Memchached and Redis which is very popular.
+   - low latency
+   - enable scaling and replicas to meet application requirements.
+   - handles common use cases
+     1. database layer caching, meaning a layer of caching between database and app.
+     2. session storage.
+6. AWS Database Migration Service/ DMS
+   - if you have private database and you want to integrate it into RDS?
+   - supports one time and continuous migration.
+   - out of the box supports many databases.
+   - you only pay for compute you used for migration-

@@ -493,7 +493,7 @@ these services are for organizations who wanna move to cloud.
 - can create decoupled applications.
 - organized according to topics. pub/sub published and subscribed.
 - integration to multiple AWS services.
-- apart from you some parts of you app able to talk to each other it gives end user notifications. you can send aSMS, email or push to mobile app.
+- apart from you some parts of you app able to talk to each other it gives end user notifications. you can send aSMS, email or push to mobile app. so certain parts of app can listen to some topics and other can listen to others.
 - SNS archetecture:
   - ![SNSarchetecture](./assets/DBAS.png?raw=true "SDatabase and related services")
 - SNS messgaes or emails are not permanent. if you dont subscribed to a topic you may never know info about it

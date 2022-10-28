@@ -580,7 +580,7 @@ these services are for organizations who wanna move to cloud.
   1. AWS is responsible for Security of Cloud, customer is responsible for security in the cloud.
      ![shared Responsibility](./assets/sharedResponsibility.png?raw=true "sharedResponsibility")
 
-2. AWS well-architechted framework:
+2. AWS well-architected framework:
 
    - over time AWS has created best practices here at AWS well-architechted framework.
    - there are 5 pillers
@@ -589,7 +589,7 @@ these services are for organizations who wanna move to cloud.
      3. reliability: systems are up and running.
      4. performance efficiency: using resources efficiently.
      5. Cost optimization: minimal cost for desired value
-   - you sould you to AWS well-architechted docs to follow best practices as you build your first app in AWS.
+   - you should go to AWS well-architechted docs to follow best practices as you build your first app in AWS.
 
 3. high-availability and fault tolerance:
 
@@ -600,7 +600,7 @@ these services are for organizations who wanna move to cloud.
       - keeping solution running despite issues that may occure.
 
    - how to build solution based on these practices.
-     ![solutions Architech map](./assets/sharedResponsibility.png?raw=true "solutions Architech map")
+     ![solutions Architech map](./assets/solutionsArchitech.png?raw=true "solutions Architech map")
 
 4. Compliance Standards:
    - PCI-DSS: if you wanna directly handle credit cards data those companies would like you to meet this standered.

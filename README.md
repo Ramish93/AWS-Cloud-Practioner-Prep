@@ -723,4 +723,7 @@ these services are for organizations who wanna move to cloud.
    - can intigrate into your custom app.
    - supports 31 languages globally.
 
-# Disaster Recovery on AWS:
+# Disaster Recovery/DR on AWS:
+
+- how we prepair from it. hard/soft ware failure, water damage, human error etc.
+- if you are leveraging AWS,

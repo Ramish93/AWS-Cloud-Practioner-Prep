@@ -651,9 +651,9 @@ these services are for organizations who wanna move to cloud.
 
 ## Data Architect in AWS:
 
-1. on permise data integration services:
+1. on permise data integration services, **Aws storage gateway:**
 
-   - Aws storage gateway: this is a hybrid cloud storage service. so merging together your datacenter and AWS.
+   - this is a hybrid cloud storage service. so merging together your datacenter and AWS.
    - integrates cloud storage into your local network by deploying a VM or specific hardware appliance running gateway software onto your network.
    - integrats with S3 and EBS.
    - supports 3 types of gateway:
@@ -663,7 +663,7 @@ these services are for organizations who wanna move to cloud.
         > provides cloud based iSCSI volume to local applications and its stored on cloud.
      3. file gateway
         > enables you to store file in amazon s3 while keeping some files for cache and low latency
-   - AWS dataSync: it here how you set you integration of data from your datacenter to AWS.
+   - AWS dataSync: its to show how you set you integration of data from your datacenter to AWS.
      - it works by deploying VM on your network.
      - integrates with S3, EFS, FSx.
      - great speed trasfer due to custom protocole AWS has developed.

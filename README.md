@@ -674,7 +674,7 @@ these services are for organizations who wanna move to cloud.
    - **AWS Glue:** this is a managed extract, tansform and load ETL serveice.
    - so first you extract data from your datacenter, then transform it eg. change format of phone number or other thing. load meaning putting in new location
    - intergrates well with Amazon RDS, DynamoDB, Redshift and s3.
-   - serverless model of execution. so you dont neet to spin up servers. etc. just use service.
+   - serverless model of execution. so you dont need to spin up servers. etc. just use service.
 
    - **Amazon EMR elastic map reduce:**
    - big-data cloud processing service using popular tools
@@ -696,10 +696,10 @@ these services are for organizations who wanna move to cloud.
    - being able to query large-scale data within S3.
    - write query just using standered SQL.
    - charged basied on data you scanned during query.
-2. Amazon Quicksight: fully interlligent business intelligence service enabling dynamic data dashboards that you stored in AWS.
+2. Amazon Quicksight: fully interlligent business intelligence service enabling dynamic data dashboards that you stored in AWS Redshift and others.
    - many use models: one is per-user and per-session pricing model. so there are different versions with different capabilities and cost.
 3. Amazon CloudSearch: fully managed search service for custom applications.
-   - if you wannt make application for custom search and show data to users like alot of pdf documents etc. it can scale large data.
+   - if you wannt make application for custom search like alot of pdf documents etc. and show data to users it can scale large data.
    - charged per-hour and instance type search infrastructure.
 
 ## Integrating AI and Machine Learning:
@@ -722,3 +722,5 @@ these services are for organizations who wanna move to cloud.
    - can traslate audio or you speak and it traslates imidiately.
    - can intigrate into your custom app.
    - supports 31 languages globally.
+
+# Disaster Recovery on AWS:

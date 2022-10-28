@@ -650,3 +650,75 @@ these services are for organizations who wanna move to cloud.
   - can work with social and enterprise identity providers. like google, amazon, facebook.
 
 ## Data Architect in AWS:
+
+1. on permise data integration services:
+
+   - Aws storage gateway: this is a hybrid cloud storage service. so merging together your datacenter and AWS.
+   - integrates cloud storage into your local network by deploying a VM or specific hardware appliance running gateway software onto your network.
+   - integrats with S3 and EBS.
+   - supports 3 types of gateway:
+     1. tape gateway:
+        > like old days where data used to be on tapes, it gives same experience. but with virtual tapes.
+     2. volume gateway
+        > provides cloud based iSCSI volume to local applications and its stored on cloud.
+     3. file gateway
+        > enables you to store file in amazon s3 while keeping some files for cache and low latency
+   - AWS dataSync: it here how you set you integration of data from your datacenter to AWS.
+     - it works by deploying VM on your network.
+     - integrates with S3, EFS, FSx.
+     - great speed trasfer due to custom protocole AWS has developed.
+     - charged per GB of data transfered between your datacenter and AWS.
+
+2. Data processing:
+
+   - **AWS Glue:** this is a managed extract, tansform and load ETL serveice.
+   - so first you extract data from your datacenter, then transform it eg. change format of phone number or other thing. load meaning putting in new location
+   - intergrates well with Amazon RDS, DynamoDB, Redshift and s3.
+   - serverless model of execution. so you dont neet to spin up servers. etc. just use service.
+
+   - **Amazon EMR elastic map reduce:**
+   - big-data cloud processing service using popular tools
+   - operates in cluster environment without configurations.
+   - frameworks it supports:
+     - apache spark, apache hive, apache Hbase, apache Flink, apachehudi, Pesto
+   - you can use these tools without spending massive time on configurations.
+
+   - **AWS data pipeline:**
+   - also a managed ETL service.
+   - data workflow orchestration service across aws services
+   - supperts S3, dynamoDb, Redshift, EMR, RDS.
+   - can integrate your on-premise datastore within your pipeline.
+
+## Analizing Data:
+
+1. Amazon Athena: lets you query data stored in S3.
+   - its a fully managed serverless service. dont have to configure any infrastructure just leverage the service.
+   - being able to query large-scale data within S3.
+   - write query just using standered SQL.
+   - charged basied on data you scanned during query.
+2. Amazon Quicksight: fully interlligent business intelligence service enabling dynamic data dashboards that you stored in AWS.
+   - many use models: one is per-user and per-session pricing model. so there are different versions with different capabilities and cost.
+3. Amazon CloudSearch: fully managed search service for custom applications.
+   - if you wannt make application for custom search and show data to users like alot of pdf documents etc. it can scale large data.
+   - charged per-hour and instance type search infrastructure.
+
+## Integrating AI and Machine Learning:
+
+- now that you have alot of data and you've processed and analyzed it. they can analyze large amout of data.
+
+1. **Amazon Rekognition:** its computer vision service powered by Machine Learning. meaning we can get insights on images stored on platform.
+
+   - fully managed image and video recognition deep learning service. it can identity object and actions in images/videos.
+   - can detect specific prople using facial analysis.
+   - if you had a clothing store and you would like to detect when people are wearing your products or checking then out in a website you can see that, its called custom label for bussiness objects
+
+2. **Amazon Translate**: translate text powered by Machine Learning.
+
+   - supports 54+ languages,
+   - has laguage identification.
+   - can traslate text and you speak and it traslates imidiately.
+
+3. **Amazon Transcribe:** speach to text solution.
+   - can traslate audio or you speak and it traslates imidiately.
+   - can intigrate into your custom app.
+   - supports 31 languages globally.

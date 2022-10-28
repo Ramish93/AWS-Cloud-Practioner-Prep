@@ -727,3 +727,4 @@ these services are for organizations who wanna move to cloud.
 
 - how we prepair from it. hard/soft ware failure, water damage, human error etc.
 - if you are leveraging AWS,
+  ![DR scnerios](./assets/DRscnerios.png?raw=true "DR scnerios")

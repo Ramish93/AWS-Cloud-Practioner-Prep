@@ -570,7 +570,8 @@ these services are for organizations who wanna move to cloud.
 
 # Inroduction to Security and Architecture on AWS:(3rd blog)
 
-- Acceptable use policy: like accept agreement when you sign up.
+1. Acceptable use policy: like accept agreement when you sign up.
+
 - it stop you to send unsolicited mass emails. spam emails.
 - hosting or distribution of harmful content. virus or malware
 - penetration testing: you can do that now, it lets you run test to see security risks in you app. they give a list of services for it.
@@ -579,7 +580,7 @@ these services are for organizations who wanna move to cloud.
   1. AWS is responsible for Security of Cloud, customer is responsible for security in the cloud.
      ![shared Responsibility](./assets/sharedResponsibility.png?raw=true "sharedResponsibility")
 
-1. AWS well-architechted framework:
+2. AWS well-architechted framework:
 
    - over time AWS has created best practices here at AWS well-architechted framework.
    - there are 5 pillers
@@ -590,11 +591,24 @@ these services are for organizations who wanna move to cloud.
      5. Cost optimization: minimal cost for desired value
    - you sould you to AWS well-architechted docs to follow best practices as you build your first app in AWS.
 
-2. high-availability and fault tolerance:
+3. high-availability and fault tolerance:
+
    1. fault tolerance:
       - being able to support faliure of components within an architechture.
       - like SQS if some components are down. we can still get data from que.
    2. High availability:
       - keeping solution running despite issues that may occure.
+
    - how to build solution based on these practices.
      ![solutions Architech map](./assets/sharedResponsibility.png?raw=true "solutions Architech map")
+
+4. Compliance Standards:
+   - PCI-DSS: if you wanna directly handle credit cards data those companies would like you to meet this standered.
+   - HIPAA: compliance standards for healthcare data in terms of privecy. so least privilege.
+   - SOC 1, SOC 2, SOC 3: technical compliance standards, relaed to oporational processing of you data centers.
+   - FedRAMP: compliance standards for government data handling
+   - ISO 27018: personally identifiable information.
+     services that allow you to adhere and navigate to these compliance standards:
+     1. AWS Config: provides conformance packs for standards.
+     2. AWS artifact: provides self-service access to reports.
+     3. AWS guadDuty: provides intelligent threat decection. over-view and notify scenarios that could lead you to be out of compliance.

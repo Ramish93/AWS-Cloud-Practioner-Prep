@@ -569,3 +569,32 @@ these services are for organizations who wanna move to cloud.
     3. AWS opsworks stacks: it allows you to manage your app in layers and you can manage them with chef recepies .
 
 # Inroduction to Security and Architecture on AWS:(3rd blog)
+
+- Acceptable use policy: like accept agreement when you sign up.
+- it stop you to send unsolicited mass emails. spam emails.
+- hosting or distribution of harmful content. virus or malware
+- penetration testing: you can do that now, it lets you run test to see security risks in you app. they give a list of services for it.
+- least privilege access: give new user least permisions to complete their task. dont use root account, make a IAM(identity and access managemanet) account for daily use.
+- security and compliance is shared responsibility of AWS and customer.
+  1. AWS is responsible for Security of Cloud, customer is responsible for security in the cloud.
+     ![shared Responsibility](./assets/sharedResponsibility.png?raw=true "sharedResponsibility")
+
+1. AWS well-architechted framework:
+
+   - over time AWS has created best practices here at AWS well-architechted framework.
+   - there are 5 pillers
+     1. operational excellence: let us know we're running and monitoring system and bussiness value.
+     2. Security: procecting data while deploying and throughout lifecycle of it.
+     3. reliability: systems are up and running.
+     4. performance efficiency: using resources efficiently.
+     5. Cost optimization: minimal cost for desired value
+   - you sould you to AWS well-architechted docs to follow best practices as you build your first app in AWS.
+
+2. high-availability and fault tolerance:
+   1. fault tolerance:
+      - being able to support faliure of components within an architechture.
+      - like SQS if some components are down. we can still get data from que.
+   2. High availability:
+      - keeping solution running despite issues that may occure.
+   - how to build solution based on these practices.
+     ![solutions Architech map](./assets/sharedResponsibility.png?raw=true "solutions Architech map")

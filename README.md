@@ -612,3 +612,41 @@ these services are for organizations who wanna move to cloud.
      1. AWS Config: provides conformance packs for standards.
      2. AWS artifact: provides self-service access to reports.
      3. AWS guadDuty: provides intelligent threat decection. over-view and notify scenarios that could lead you to be out of compliance.
+
+## AWS Identities and user management:
+
+1. IAM:
+
+   - if you want give access to your employees to AWS console, you want them to be able to spin up a EC2 server but nothing else this is where you'll create their user and configure what they are able to do.
+   - its free. manages authentication and authentication
+   - uses Identity Federation: allows us to use external identity providers like google accounts, facebook etc. to to handle authentication portion of IAM. like if you have 2k employees and you wanna create config for them.
+
+   - IAM identity types:
+
+     1. user: single individual to access AWS resources like making account for an employee and config it.
+     2. group: allows you to manage permissions for a group. you assign permissions to group and then add new users in it.
+     3. role: user or service assume permissions for a task. like an EC2 server accessing the s3 bucket. this is what roles are here for to give access to our services to talk with other services on AWS in a secure way.
+
+   - Policies in IAM:
+
+     1. its a json document that defines permissions for IAM identity.
+     2. difines what services identity can access and what action can be taken by that identity on that service. like using s3 bucket allowed deleting now allowed.
+     3. policies can be custom managed or by AWS.
+
+     - here is what a custom policy look like
+       ![custom policies](./assets/custompolicies.png?raw=true "custom policies")
+
+   - IAM best practices:
+     1. multi-factor authentication:
+        extra layer of security.
+     2. least privilege access
+
+- Amazon Cognito:
+  - a managed service that enables youto hande handle authentication and authorization for custom web and mobile applications.
+  - its like IAM but for custom applications.
+  - has UI components for IOS android etc.
+  - security capabilities, to control access.
+  - enables you controlled access to AWS resources.
+  - can work with social and enterprise identity providers. like google, amazon, facebook.
+
+## Data Architect in AWS:

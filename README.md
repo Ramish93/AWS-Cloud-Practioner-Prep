@@ -741,4 +741,14 @@ these services are for organizations who wanna move to cloud.
    - you keep only key infrastructure running in the cloud. it does incure cost. and for infrastructure that you want ready but not running you can prepair AMIs so they can start new servers at moments notice.
    - its designed to reduce recovery time over backup and restore approach. it has to be maintained with time because it is running.
 
-3.
+3. Warm Standby:
+
+   - this is a scale down version if full environment running in cloud. it runs everything but not at full scale. it has more cost than above.
+   - critical systems can be running on small instances types and scale up on DR event.
+
+4. Multi site:
+   - full environment is running in cloud at all times. meaning our datacenter is and could running at same time.
+   - Near seamless recovery process.
+   - most cost.
+
+## Selecting a Disaster Recovery Architecture:

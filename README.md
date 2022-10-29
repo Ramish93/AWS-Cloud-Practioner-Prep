@@ -756,7 +756,11 @@ these services are for organizations who wanna move to cloud.
 1. RTO Recovery Time Objective:
    - the time it takes to get your systems up and running after DR event.
    - if you have an objective that we should be up and runnin in 8 hours after DR then your RTO is 8hours.
+   - multi site has least RTO but high cost and backup and store has highest.
 2. Recovery Point Objective:
    - the amout of data lost in terms of time during DR event.
    - meaning if you have online store and Disaster happens for 1 hour so in that time you will loose data that people sent, so RPO is 1 hour.
    - it is all about data not time.
+   - multi site has least RTO but high cost and backup and store has highest.
+
+# Archetecting application on amazon EC2:

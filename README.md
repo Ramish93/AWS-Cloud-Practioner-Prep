@@ -832,6 +832,61 @@ these services are for organizations who wanna move to cloud.
    - Data stored in S3 protection service powered by machine learning.
    - with specifing it can detect personal information and intellectual property in S3.
    - it watch and catagories data to make sure data breach doesn't happen.
+   - provides a level of dashboard to show how data is stored
+   - enables alerts for unusual activity and we can't do this type of detection if we do it manually.
 
 3. Amazon inspector:
+
    - automated security assesment service for EC2 instances.
+   - if we wanna ser vulnerabilities, standereds etc we can use this.
+   - charged per instance per assessment run.
+   - two types of rules packages:
+
+     1. network reachability assessment: to see what is available to internet from our servers
+     2. host assessment: to see what EC2 instance are patched for vulnerabilities.
+
+## deploying pre-defined solutions.
+
+1. AWS service Catalog:
+
+   - if you are an organization and want to use services on AWS.
+   - if you make a robust service that meets all best practises org and industry you can let other use it.
+   - supports a lifecycle for services released in catalog. eg. if you update verion of your service
+     everybody using it will be notified.
+
+2. AWS marketplaces:
+   - catalog software to run on AWS but from third party providers.
+   - many similarities in this and AWS service catalog.
+   - enables different pricing models to overcome licencing in cloud.
+   - charges appear on your AWS bill.
+
+## Developer Tools:
+
+- a suite of services to make developemet process as easy
+  as it can be. and easy to follow best practices.
+
+1. AWS Code commit: managed source code repository using Git.
+
+   - uses IAM policies.
+
+2. AWS Code Build: its a fully managed build service. continuos integration service.
+
+   - dont have to worry about maintaining infrastructure.
+   - charged per minute of compute resources you utilize.
+
+3. AWS CodeDeploy: take care of deployment out to many AWS services. fully managed.
+
+   - can deploy to EC2, fargate, lambda and your on-premise servers
+   - provides dashboard so, easy to navigate.
+
+4. AWS Code pipeline: it create a pipeline for all above
+   services and integrates with them well, so we can make them and see the process.
+
+   - fully managed continuous delivery service.
+   - integrate with github
+
+5. AWS CodeStar: a way to bootstrap this entire process for out custom applications.
+   - workflow tool to automate the use of above developer services.
+   - can cerate complete continuous delivery toolchain with few clicks.
+   - dashboard, and configs in console.
+   - you are only charged for other services you leverage. its free.

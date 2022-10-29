@@ -764,3 +764,34 @@ these services are for organizations who wanna move to cloud.
    - multi site has least RTO but high cost and backup and store has highest.
 
 # Archetecting application on amazon EC2:
+
+- Scaling EC2 infrastructure: vertical scaling, horizontal scaling:
+
+  - Auto Scaling Group
+
+    - set of EC2 instances with rules for scaling and management,
+    - there is a launch template defines the instace config for the group. if you know you want Windos server with specific configs you can define all that in this template.
+    - you can define min, max and desired number of instances.
+    - performs health checks on each instance.
+    - Exists within 1 or more AZ in single reagion. usually multiple AZ for fault tolerance.
+    - works with on demand and spot instances.
+    - if one server (C4) stops running the application load balancer will tell auto scaling and it will spin a new instance, mean time the traffic is routed to other AZ server.
+      ![EC2 horizontal scaling](./assets/EC2horizontal.png?raw=true "EC2 horizontal scaling")
+
+- AWS Secret Manager:
+
+  - when scaling out to multiple servers to securely integrate things like credentials, API Keys, Passwords like if we have RDS we would need secure way to get those credentials.
+  - Secrets Manager integrate natively with RDS, DocumentDB and redshift.
+  - so you dont wann keep same password for RDS for 3 years for security, you can config it to keep rotating.
+
+  - Elastic Load Balancing:
+    - allows us to distribute traffic across multiple targets
+
+## Controling access to EC2 instances:
+
+1. EC2 Security groups.
+   - enables firewall-like control for resources within the VPC.
+2. Network ACL's:
+   - control inbound outbound trafficfor subnets within the VPC.
+3. AWS VPN:
+   - secure access to entire VPC using a encrypted tunnel.

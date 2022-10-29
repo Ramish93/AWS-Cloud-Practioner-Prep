@@ -790,8 +790,48 @@ these services are for organizations who wanna move to cloud.
 ## Controling access to EC2 instances:
 
 1. EC2 Security groups.
-   - enables firewall-like control for resources within the VPC.
-2. Network ACL's:
-   - control inbound outbound trafficfor subnets within the VPC.
+
+   - enables firewall-like control for EC2 instances.
+   - control inbound outbound traffic but at instance level, and they can belong to multiple
+     security groups and all servers in that group will have
+     same security config
+   - VPC has default security group, and all our bound traffic
+     is allowed meaning your server can send any info
+     out to internet
+
+2. Network ACL's: access control list.
+
+   - control inbound outbound traffic for subnets within the VPC.
+   - every server with subnet will adopt ACL for that subnet.
+   - and this allows you to allow and deny traffic but default ACL
+     allows inbound outbound traffic but a custom ACL by default denys all traffic.
+
 3. AWS VPN:
    - secure access to entire VPC using a encrypted tunnel.
+     so your VPC will not be available to anyone.
+   - VPC can be connected to a single machine.
+   - supports two services:
+     1. site-to-site VPN: in aws direct connect you have direct connection to
+        infrastructure that doesnt need public internet. but here you have a site-to-site VPN in middle and you config the connection.
+        and it travels over internet. and its encrypted.
+     2. Clinet VPN
+
+## Security services:
+
+1. AWS Shield:
+
+   - Managed Distributed denial of service DDoS, DDoS is a type of attach
+     by flooding server or servers with more traffic than they can handle to bring them down.
+   - its ongoing threat detection and mitigation. you keep it runnig.
+   - two service levels for it:
+     1. standered :
+     2. advanced:
+
+2. Amazon Macie:
+
+   - Data stored in S3 protection service powered by machine learning.
+   - with specifing it can detect personal information and intellectual property in S3.
+   - it watch and catagories data to make sure data breach doesn't happen.
+
+3. Amazon inspector:
+   - automated security assesment service for EC2 instances.

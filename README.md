@@ -728,3 +728,17 @@ these services are for organizations who wanna move to cloud.
 - how we prepair from it. hard/soft ware failure, water damage, human error etc.
 - if you are leveraging AWS,
   ![DR scnerios](./assets/DRscnerios.png?raw=true "DR scnerios")
+
+1. Backup and restore:
+
+   - taking all production data and back it up to amazon S3, in archive or standered storage class.
+   - EBS data can be stored as snapshots in amazon S3.
+   - in a DR event, a process is started to launch new environment. new servers and DB instances etc.
+   - it has longest recovery time. and least cost.
+
+2. Pilot light:
+
+   - you keep only key infrastructure running in the cloud. it does incure cost. and for infrastructure that you want ready but not running you can prepair AMIs so they can start new servers at moments notice.
+   - its designed to reduce recovery time over backup and restore approach. it has to be maintained with time because it is running.
+
+3.

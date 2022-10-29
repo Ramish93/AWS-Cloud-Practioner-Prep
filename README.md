@@ -838,7 +838,7 @@ these services are for organizations who wanna move to cloud.
 3. Amazon inspector:
 
    - automated security assesment service for EC2 instances.
-   - if we wanna ser vulnerabilities, standereds etc we can use this.
+   - if we wanna see vulnerabilities, standered practices meet etc we can use this.
    - charged per instance per assessment run.
    - two types of rules packages:
 
@@ -887,6 +887,6 @@ these services are for organizations who wanna move to cloud.
 
 5. AWS CodeStar: a way to bootstrap this entire process for out custom applications.
    - workflow tool to automate the use of above developer services.
-   - can cerate complete continuous delivery toolchain with few clicks.
+   - can create complete continuous delivery toolchain with few clicks.
    - dashboard, and configs in console.
    - you are only charged for other services you leverage. its free.

@@ -39,7 +39,11 @@ software as a service: email provider could be a SAAS service we are using them 
 - these reagions operate with smaller units called **avalability zones .** they consist of one or more data centers. there are multiple availability zones included with each aws region. this means at minimum each aws reagion has two availability zones. and at minimum each availability zone has one data center. availability zones are located in the aws reagion. globally 69 availability zones have been launched. almost every service in AWS is connected to these availability zones or regions.
   in US there are 6 regions 4 public 2 govCloud for government. each region has 3,4 availability zones.
 
-           > availibility means an app is fulfilling its intended bussiness purposes, apps with high availability are built where a single failure wont lessen applications ability to fully operation. which means for an app to be high avalibility we need to be deployed in multiple availibility zones within an AWS region. they are normally mission critical applications.
+           > availibility means an app is fulfilling its intended bussiness purposes,
+           apps with high availability are built where a single failure wont lessen
+           applications ability to fully operation. which means for an app to be high avalibility
+           we need to be deployed in multiple availibility zones within an AWS region.
+           they are normally mission critical applications.
 
            1. naming convention of availibility zones is as follows: eg name is us-east-2a
 
@@ -58,16 +62,18 @@ software as a service: email provider could be a SAAS service we are using them 
   1. Amazon cloud front: its AWS global CDN.a web service that speeds up distribution of your static and dynamic web content, such as . html, . css, . js, and image files, to your users.
   2. Amazon Route 53: Amazons DNS service.a highly available and scalable Domain Name System (DNS)
 
-  there are 200 different locaitons that have edge locations. so this is most common part of infrastructure AWS has. it allows AWS to serve content from locations closest to users. so if we produce content in stockholm because of edge locations out content is able to have a server in singapore if people view it there.
+  there are 200 different locations that have edge locations. so this is most common part of infrastructure AWS has. it allows AWS to serve content from locations closest to users. so if we produce content in stockholm because of edge locations out content is able to serve in singapore if people view it there.
 
 ## Understanding Cloud Economics:
 
 - two important terms are
+
   1. CapEx (capitalized expenditures) like when building a data center upfront investing cost of building, server equipment etc which is an asset for company. images illustrating usage of private data center with an app and 2nd to show if you need more capacity.
+  2. OpEx is operating expediture. day to day expenditures after building data center, maintenance, connectivity and utilities.
+
      ![CapEx](./assets/CapEx.png?raw=true "CapEx")
      ![CapEx1](./assets/CapEx1.png?raw=true "CapEx1")
      ![finance expence](./assets/finance.png?raw=true "inance expence")
-  2. OpEx operating expediture. day to day expenditures after building data center, maintenance, connectivity and utilities.
 
 ## organizations and optimizations of AWS cost:
 
@@ -109,7 +115,7 @@ software as a service: email provider could be a SAAS service we are using them 
   - AWS Basic support (no cost):
     its for all customers, you have 7 core check with trusted advisor. 24x7 customers service, docs, white papers etc. however you dont get access to engineers for technical-implimentation.
   - AWS developer support(29$ per month but tied to usage):
-    for individual devs tring to run workload in aws.along with basic support you get bussiness hours support access to engineers. its limited to one contact per developer and reply is late.
+    for individual devs trying to run workload in aws.along with basic support you get bussiness hours support access to engineers. its limited to one contact per developer and reply is late.
   - AWS bussiness support(100$ permonth but tied to usage):
     along with developer support, full set of trusted advisor checks. 24x7 access to phone, email and chat access to engineers. it lets all of your people to have access and file support request not just root user. you are also allowed to deploy third party software in aws with support.
   - AWS enterprise support(15k permonth plus usage):
@@ -124,7 +130,7 @@ these services are for organizations who wanna move to cloud.
 
 - aws quick start: docs for step by step implimenting any common tech platform into aws. good for orgs who just wanna know if they are deploying in a good manner.
 - Aws partner network consulting partner: thye dont work for aws but work for a company that is approved from aws, orgs can hire them to imliment a solution.
-- Aws profesional service: if you wanna work with AWS people.
+- Aws profesional service: if you wanna work with AWS engineers.
 
 # Understanding AWS core Services (2nd blog):
 
@@ -151,7 +157,7 @@ these services are for organizations who wanna move to cloud.
 
 - Root User: is special kind of user, its the user that first created account on AWS when you started using AWS. it has permissions like support tier and deleting the account.
   - root user can auth two factor login, they can see billing and organization in dashboard, and region change,
-  - if you change reagion, new resourses will be launched in new reagion, if reagion doesn't matter for a service like Route 53 it will say global at region selection menu.
+  - if you change region, new resourses will be launched in new region, if region doesn't matter for a service like Route 53 it will say global at region selection menu.
 - IAM user:
 
 ### using AWS Cli:
@@ -165,7 +171,7 @@ these services are for organizations who wanna move to cloud.
 
 - The ones that are included in exam. this is kind of service that lets you leverage tha virtual machines like database,web server, or data calulations/statistics etc.
 
-1. Amazon EC2 or elastic compute clode. (imp for exam)
+1. Amazon EC2 or elastic compute cloud. (imp for exam)
    - is a web service that provides resizeable compute capacity in cloud, designed to make web-scale computing easier for devs.
    - sample usecase:
      - web app hosting, go in ec2 and make a server and put code there.

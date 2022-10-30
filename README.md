@@ -512,7 +512,7 @@ these services are for organizations who wanna move to cloud.
    - you can put 256kb in a message.
    - allows messages to be stored for 14 days.
    - two types of queues are supported with SQS.
-     1. standered queue. it can guarantee the order of items you pull off of queue.
+     1. standered queue. it can't guarantee the order of items you pull off of queue.
      2. FIFO first in first out queue. processes messages in order.
 3. AWS Step functions:
    - serverless workflow management service.

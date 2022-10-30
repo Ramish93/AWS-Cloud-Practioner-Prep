@@ -437,7 +437,7 @@ these services are for organizations who wanna move to cloud.
    - takes platform as a service approach.
    - fully managed service. handles provisioning and, patching, backup and recovery of your database for you which consume quiet some time.
    - supports deployment across multiple AZ.
-   - support read replicas for some platforms. you can scale out your database for apps that are using this database.
+   - support read replicas for some platforms. you can scale out (horizontal scaling) your database for apps that are using this database.
    - launches into a VPC.
    - two volume types
 
@@ -461,7 +461,7 @@ these services are for organizations who wanna move to cloud.
    - you dont manage the database layer. you just use it.
    - provides both key value pairs, and documented database.
    - extremely low latency.
-   - it can sclae automatically based on usage or you can scale manually with configurations.
+   - it can scale automatically based on usage or you can scale manually with configurations.
    - DAX dynamo Accelerator. which gives you in memory chache for faster speed.
    - can support 10 trillion reqs per day and 20million requests per second.
    - Use Cases:
@@ -476,7 +476,7 @@ these services are for organizations who wanna move to cloud.
    - ability to fully endcrypt content of warehouse.
    - it gives a level of isolation in your VPC.
    - **redshift spectrum:**
-     - an suset of Redshit, it gives you ability to query exabytes of data using amazon S3.
+     - an subset of Redshit, it gives you ability to query exabytes of data using amazon S3.
 5. Amazon Elasticache
    - fully managed in-memory data store.
    - it has two different engines supported. Memchached and Redis which is very popular.
@@ -502,7 +502,7 @@ these services are for organizations who wanna move to cloud.
 - integration to multiple AWS services.
 - apart from you some parts of you app able to talk to each other it gives end user notifications. you can send aSMS, email or push to mobile app. so certain parts of app can listen to some topics and other can listen to others.
 - SNS archetecture:
-  - ![SNSarchetecture](./assets/DBAS.png?raw=true "SDatabase and related services")
+  - ![SNSarchetecture](./assets/SNSarchetecture.png?raw=true "SDatabase and related services")
 - SNS messgaes or emails are not permanent. if you dont subscribed to a topic you may never know info about it
 
 2. Amazon SQS

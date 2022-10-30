@@ -224,7 +224,7 @@ these services are for organizations who wanna move to cloud.
 
 4. **Spot instances.**
 
-- this is only for workloads that can start and stop without effecting what you are trying to do. but great savings.
+- this is only for workloads that can start and stop without effecting your bussiness or application. but great savings.
 - it really lets you leverage excess EC2 compute capacity that might exists in availibility zone.
 - provides upto **90% discount** over on-demand pricing.
 - there is a market price for instance type per availability zone.
@@ -233,7 +233,7 @@ these services are for organizations who wanna move to cloud.
 
 5. **Dedicated Host instances.**
 
-- gives you dedicated physical server in datacenter, most expencive option.
+- gives you dedicated physical server in datacenter, most expensive option.
 - if you have a per-server licencing model. and you want to abile by terms of licence.
 - also some compliance require a dedicated host. so in that case too use this.
   ![EC2 buy Options](./assets/EC2buyOptions.png?raw=true "EC2 buy Options")
@@ -260,7 +260,7 @@ these services are for organizations who wanna move to cloud.
 - EC2 customization: it allows you to add customization to servers where your app is running.
 
 - **Use cases for elastic Beanstalk**
-- deploying app with minimum knowledge of other services, like config servers, scaling groups, setting scaling rules, etc. you can rely on electric beanstalk to do for you
+- deploying app with minimum knowledge of other services, like config servers, scaling groups, setting scaling rules, etc. you can rely on elastic beanstalk to do for you
 - reduce overall maintenance.
 - few customize the environments. other hand if you really like to be precise in tech or versions then EC2 is ideal.
 

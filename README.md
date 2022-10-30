@@ -306,7 +306,7 @@ these services are for organizations who wanna move to cloud.
 4. Amazon API Gateway:
    - fully managed API management service. meaning you can create APIs so other apps can call them and you can make those available. you can distribute those through cloud front.
    - it directly integrates with other AWS services.
-   - give you moneitoring and metrics on API calls.n so you can see usage and fix bugs if any.
+   - give you monitoring and metrics on API calls, So you can see usage and fix bugs if any.
    - can integrate this in VPC or on-premise app.
 5. Amazon CloudFront:
    - it leverage edge locations. **its a gloabal CDN.** which means there are servers around the world where you can send your content to, so that users get that content from servers closer to them.
@@ -318,10 +318,11 @@ these services are for organizations who wanna move to cloud.
 6. Elastic Load Balancing
    - Elasticity is defined as ability of infrastructure supporting an app to grow and contract based on usage.
    - distributes traffic across multiple targets based on eg. which server is busier. come default with EC2 ECS and Lambda.
-   - there are 3 types of load balencers:
+   - there are 3 types of load balancers:
      1. application load balancers(ALB):
      2. NLB: Network load balancers
      3. Classic load balancers
+   - The ALB operates on layer 7, which means the ALB inspects the details of every incoming HTTP request. In contrast, the NLB works on layer 4. All the NLB cares about is forwarding the incoming TCP or UDP connection to a target. The NLB does not inspect an incoming HTTP request, for example
 
 - Scaling on Amazon EC2:
 
@@ -403,7 +404,7 @@ these services are for organizations who wanna move to cloud.
 
    - EBS is an option to attach storage to EC2 instance but EFS is anthoer approach.
    - Unlike EBS this can be attached to multiple instances at same time.
-   - its a fully managed NFS file system. designed specificly for linux workload.
+   - its a fully managed NFS (Network File System (NFS) is a distributed file system protocol that lets users access files over a network similar to the way they access local storage) file system. designed specificly for linux workload.
    - like EBS it supports petabytes of data.
    - saves data across multiple AZ.
    - two different storage classes:
@@ -422,7 +423,7 @@ these services are for organizations who wanna move to cloud.
    - how to transfer large amount of data two AWS without public internet?
    - its a data migration service. usually petabytes of data physically. meaning you get a physical device from AWS to connect to your network and upload.
 6. Aws snowmobile.
-   - if you wannt physically migrate exabytes of data. it will be like a shiping container size device.
+   - if you want physically migrate exabytes of data. it will be like a shiping container size device.
 
 - comparison of these 2:
   ![S3 snow ball and mobile](./assets/snowballMobil.png?raw=true "S3 snow ball and mobile")

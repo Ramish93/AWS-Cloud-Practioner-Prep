@@ -404,7 +404,7 @@ these services are for organizations who wanna move to cloud.
 
    - EBS is an option to attach storage to EC2 instance but EFS is anthoer approach.
    - Unlike EBS this can be attached to multiple instances at same time.
-   - its a fully managed NFS (Network File System (NFS) is a distributed file system protocol that lets users access files over a network similar to the way they access local storage) file system. designed specificly for linux workload.
+   - its a fully managed NFS (Network File System is a distributed file system protocol that lets users access files over a network similar to the way they access local storage) file system. designed specificly for linux workload.
    - like EBS it supports petabytes of data.
    - saves data across multiple AZ.
    - two different storage classes:
@@ -612,7 +612,7 @@ these services are for organizations who wanna move to cloud.
 4. Compliance Standards:
    - PCI-DSS: if you wanna directly handle credit cards data those companies would like you to meet this standered.
    - HIPAA: compliance standards for healthcare data in terms of privecy. so least privilege.
-   - SOC 1, SOC 2, SOC 3: technical compliance standards, relaed to oporational processing of you data centers.
+   - SOC 1, SOC 2, SOC 3: technical compliance standards, related to oporational processing of you data centers.
    - FedRAMP: compliance standards for government data handling
    - ISO 27018: personally identifiable information.
      services that allow you to adhere and navigate to these compliance standards:
@@ -622,7 +622,7 @@ these services are for organizations who wanna move to cloud.
 
 ## AWS Identities and user management:
 
-1. IAM:
+1. IAM: Identity and Access Management
 
    - if you want give access to your employees to AWS console, you want them to be able to spin up a EC2 server but nothing else this is where you'll create their user and configure what they are able to do.
    - its free. manages authentication and authentication

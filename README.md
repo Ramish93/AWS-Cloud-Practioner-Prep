@@ -649,7 +649,7 @@ these services are for organizations who wanna move to cloud.
      2. least privilege access
 
 - Amazon Cognito:
-  - a managed service that enables youto hande handle authentication and authorization for custom web and mobile applications.
+  - a managed service that enables you to hande handle authentication and authorization for custom web and mobile applications.
   - its like IAM but for custom applications.
   - has UI components for IOS android etc.
   - security capabilities, to control access.
@@ -723,10 +723,10 @@ these services are for organizations who wanna move to cloud.
 
    - supports 54+ languages,
    - has laguage identification.
-   - can traslate text and you speak and it traslates imidiately.
+   - can translate text and you speak and it translates imidiately.
 
 3. **Amazon Transcribe:** speach to text solution.
-   - can traslate audio or you speak and it traslates imidiately.
+   - can translate audio or you speak and it translates imidiately.
    - can intigrate into your custom app.
    - supports 31 languages globally.
 
@@ -763,12 +763,12 @@ these services are for organizations who wanna move to cloud.
 1. RTO Recovery Time Objective:
    - the time it takes to get your systems up and running after DR event.
    - if you have an objective that we should be up and runnin in 8 hours after DR then your RTO is 8hours.
-   - multi site has least RTO but high cost and backup and store has highest.
+   - multi site has least RTO but high cost and backup and store has highest RTO but least cost.
 2. Recovery Point Objective:
    - the amout of data lost in terms of time during DR event.
    - meaning if you have online store and Disaster happens for 1 hour so in that time you will loose data that people sent, so RPO is 1 hour.
    - it is all about data not time.
-   - multi site has least RTO but high cost and backup and store has highest.
+   - multi site has least RPO but high cost and backup and store has highest RPO but least cost.
 
 # Archetecting application on amazon EC2:
 

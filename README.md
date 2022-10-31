@@ -777,7 +777,7 @@ these services are for organizations who wanna move to cloud.
   - Auto Scaling Group
 
     - set of EC2 instances with rules for scaling and management,
-    - there is a launch template defines the instace config for the group. if you know you want Windos server with specific configs you can define all that in this template.
+    - there is a launch template defines the instace config for the group. if you know you want Windows server with specific configs you can define all that in this template.
     - you can define min, max and desired number of instances.
     - performs health checks on each instance.
     - Exists within 1 or more AZ in single reagion. usually multiple AZ for fault tolerance.
@@ -789,7 +789,7 @@ these services are for organizations who wanna move to cloud.
 
   - when scaling out to multiple servers to securely integrate things like credentials, API Keys, Passwords like if we have RDS we would need secure way to get those credentials.
   - Secrets Manager integrate natively with RDS, DocumentDB and redshift.
-  - so you dont wann keep same password for RDS for 3 years for security, you can config it to keep rotating.
+  - so you dont want keep same password for RDS for 3 years, for security, you can config it to keep rotating.
 
   - Elastic Load Balancing:
     - allows us to distribute traffic across multiple targets
@@ -821,7 +821,7 @@ these services are for organizations who wanna move to cloud.
      1. site-to-site VPN: in aws direct connect you have direct connection to
         infrastructure that doesnt need public internet. but here you have a site-to-site VPN in middle and you config the connection.
         and it travels over internet. and its encrypted.
-     2. Clinet VPN
+     2. Clinet VPN: WS Client VPN is a fully-managed remote access VPN solution used by your remote workforce to securely access resources within both AWS and your on-premises network. Fully elastic, it automatically scales up, or down, based on demand.
 
 ## Security services:
 
@@ -829,7 +829,7 @@ these services are for organizations who wanna move to cloud.
 
    - Managed Distributed denial of service DDoS, DDoS is a type of attach
      by flooding server or servers with more traffic than they can handle to bring them down.
-   - its ongoing threat detection and mitigation. you keep it runnig.
+   - its ongoing threat detection and mitigation. you keep it running.
    - two service levels for it:
      1. standered :
      2. advanced:

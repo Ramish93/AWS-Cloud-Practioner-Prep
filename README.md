@@ -897,3 +897,13 @@ these services are for organizations who wanna move to cloud.
    - can create complete continuous delivery toolchain with few clicks.
    - dashboard, and configs in console.
    - you are only charged for other services you leverage. its free.
+
+# The exam:
+
+1. it will be multiple choice questions, some of them with multiple right or wrong answers.
+
+- Fundamental area of exam:
+  1. fundamental cloud concepts approx 26%.
+  2. Technologies approx. 33%. like AWS infrastructure and AWS services.
+  3. Security and compliance 22%. eg. shared responsibility model and how you access compliance information reports.
+  4. Billing and pricing. tools like cost explorer. and TCO calculator 15%.

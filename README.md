@@ -587,7 +587,7 @@ these services are for organizations who wanna move to cloud.
   1. AWS is responsible for Security of Cloud, customer is responsible for security in the cloud.
      ![shared Responsibility](./assets/sharedResponsibility.png?raw=true "sharedResponsibility")
 
-2. AWS well-architected framework:
+2. AWS well-architected framework: (probably memorize them)
 
    - over time AWS has created best practices here at AWS well-architechted framework.
    - there are 5 pillers

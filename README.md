@@ -18,7 +18,7 @@ software as a service: email provider could be a SAAS service we are using them 
 
 ![clude computing models](./assets/s1.png?raw=true "clude computing models")
 
-- **whats cloud computing: AWS says the on demand delivery of computer power, data storage, applications, and IT resourses through a cloud service via internet with **pay as-you-go pricing\*\*\*\*
+**whats cloud computing: AWS says the on demand delivery of computer power, data storage, applications, and IT resourses through a cloud service via internet with \*\*pay as-you-go pricing**
 
 ### Cloud Deployment Models:
 
@@ -88,7 +88,7 @@ software as a service: email provider could be a SAAS service we are using them 
   - utilizes data from cost explorer and track all AWS services, track cost per service, service usage, reserved instance utilization, coverage and saving plans.
 - Cost planing tools:
 
-  - AWS TCO (total cost of ownership) calculator. for organizations considering from their own data center to cloud. help make a case to transition to cloud. Based on a lot of customer feedback, the AWS TCO Calculator has been replaced by the AWS Pricing Calculator.
+  - (deprecated now)AWS TCO (total cost of ownership) calculator. for organizations considering from their own data center to cloud. help make a case to transition to cloud. Based on a lot of customer feedback, the AWS TCO Calculator has been replaced by the AWS Pricing Calculator.
   - AWS simple Monthly Calculator **now deprecated and called AWS pricing calculator:** calculate specific workload in cloud. like your datacenter use 5 servers you can add them here and it will tell monthly cost.
 
 - How to organize use of aws:
@@ -503,7 +503,8 @@ these services are for organizations who wanna move to cloud.
 - can create decoupled applications.
 - organized according to topics. pub/sub published and subscribed.
 - integration to multiple AWS services.
-- apart from you some parts of you app able to talk to each other it gives end user notifications. you can send aSMS, email or push to mobile app. so certain parts of app can listen to some topics and other can listen to others.
+- apart from you some parts of you app able to talk to each other it gives end user notifications.
+  you can send aSMS, email or push to mobile app. so certain parts of app can listen to some topics and other can listen to others.
 - SNS archetecture:
   - ![SNSarchetecture](./assets/SNSarchetecture.png?raw=true "SDatabase and related services")
 - SNS messgaes or emails are not permanent. if you dont subscribed to a topic you may never know info about it
@@ -511,7 +512,9 @@ these services are for organizations who wanna move to cloud.
 2. Amazon SQS
    - fully managed message query service.
    - allow you to build decoupled apps.
-   - enables to build fault tolerant apps. meaning if something happens with analytics service when we send our user data to it. the info wont be lost it will still be in queue. and when that app is up and running we can get info from queue.
+   - enables to build fault tolerant apps. meaning if something happens with
+     analytics service when we send our user data to it. the info wont be lost it will still be in queue.
+     and when that app is up and running we can get info from queue.
    - you can put 256kb in a message.
    - allows messages to be stored for 14 days.
    - two types of queues are supported with SQS.
@@ -523,14 +526,16 @@ these services are for organizations who wanna move to cloud.
    - can support complex workflows including error handling.
    - charged per state along with other services that you use.
    - workflows are defined using Amazon states language.
-   - out of box work with other amazon services. like compute services, lambda, database services, SQS and SNS, data processing services and machine learning services.
+   - out of box work with other amazon services. like compute services, lambda,
+     database services, SQS and SNS, data processing services and machine learning services.
 
 ## Management and governance services:
 
 - this is the ecosystem of management services provided by Amazon once you launch resourses to cloud.
 
 1. AWS CloudTrail:
-   - with cloudtrail you can log, continuous monitor and retain activity from actions across aws infrastructure. it works with console, SDK and CLI.
+   - with cloudtrail you can log, continuous monitor and retain activity from actions across aws infrastructure.
+     it works with console, SDK and CLI.
    - it includes this in a S3 bucket.
    - logs event in reagions they occer.
    - best practice, it should be enabled on all aws accounts
@@ -541,7 +546,8 @@ these services are for organizations who wanna move to cloud.
      - operational analysis, like what caused a crash, it will be in logs,
      - troubleshooting
 2. AWS CloudFormation:
-   - if you have specific need for an app like 2 S3 bucket, 4 instance of EC2 etc. and you do it manually in console, maybe you make a mistake, cloudformation solves it.
+   - if you have specific need for an app like 2 S3 bucket, 4 instance of EC2 etc. and you do it manually in console,
+     maybe you make a mistake, cloudformation solves it.
    - no addional charge.
    - it uses templates in two formats, YAML JSON.
    - this is infrastructure as code.
@@ -552,31 +558,37 @@ these services are for organizations who wanna move to cloud.
    - provides configurations history for infrastructure
    - if your getting payment information PCI-DSS are rules you must follow, it comes along with config here.
 4. AWS System manager:
-   - provides unified user interface so you view operational data from multiple AWS services, also can automate operational tasks. like common maintenance actions like update EC2 instances across 20 servers that you have or less. you would write it once and all servers will update.
+   - provides unified user interface so you view operational data from multiple AWS services,
+     also can automate operational tasks. like common maintenance actions like update EC2 instances
+     across 20 servers that you have or less. you would write it once and all servers will update.
    - secure way to access server using just AWS credentials.
-   - secure way to save environment variables, like multiple apps use same key, password you can just save it here.
+   - secure way to save environment variables, like multiple apps use same key,
+     password you can just save it here.
 5. AWS Control tower:
-   - in AWS organization you can make multiple accounts with same security, logging, make consolidated billing and best practices for that are under control tower.
+   - in AWS organization you can make multiple accounts with same security, logging,
+     make consolidated billing and best practices for that are under control tower.
    - it centralizes users across all aws accounts.
    - can make new AWS accounts based on template.
-   - it has guadrails which is if you want any service to never turn off you config it here.
+   - it has guadrails which is if you want any service to never turn off, you config it here.
    - it has a decent dashboard for UI.
 6. Amazon cloud watch:
+
    - provides metrics, logs, alarams for your infrastructure.
    - collects logs, metrics like number of users in a load balancer, eventsfrom most AWS services.
    - enables alarams based on metrics. like you can set alaram to see things are working as expected.
    - provides visualization capabilities for matrics. charts etc and you can make custom dashboards.
    -
 
-- AWS opsworks:
-  - its a configurations management service.
-  - provides best for both chef and puppet
-  - configs are going to be code and they will deploy on same server, chef and puppet will manage that for you
-  - works hybrid, you can work with it on cloud and in own datacenter.
-  - its make of 3 subservices:
-    1. AWS opsworks Chef Automate: configurations management your app that utilizes chefs automate.
-    2. AWS opsworks for puppet enterprise: configurations management your app that utilizes puppets automate.
-    3. AWS opsworks stacks: it allows you to manage your app in layers and you can manage them with chef recepies .
+7. AWS opsworks:
+
+- its a configurations management service.
+- provides best for both chef and puppet
+- configs are going to be code and they will deploy on same server, chef and puppet will manage that for you
+- works hybrid, you can work with it on cloud and in own datacenter.
+- its make of 3 subservices:
+  1. AWS opsworks Chef Automate: configurations management your app that utilizes chefs automate.
+  2. AWS opsworks for puppet enterprise: configurations management your app that utilizes puppets automate.
+  3. AWS opsworks stacks: it allows you to manage your app in layers and you can manage them with chef recepies .
 
 # Inroduction to Security and Architecture on AWS:(3rd blog)
 
@@ -911,4 +923,5 @@ these services are for organizations who wanna move to cloud.
   3. Security and compliance 22%. eg. shared responsibility model and how you access compliance information reports.
   4. Billing and pricing. tools like cost explorer. and TCO calculator 15%.
 
-1-10: 2 wrong
+<!-- 1-10: 2 wrong
+11-20 0.5 wrong -->

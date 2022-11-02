@@ -317,7 +317,9 @@ these services are for organizations who wanna move to cloud.
      - AWS WAF: web application firewall.
 6. Elastic Load Balancing
    - Elasticity is defined as ability of infrastructure supporting an app to grow and contract based on usage.
-   - distributes traffic across multiple targets based on eg. which server is busier. come default with EC2 ECS and Lambda.
+   - distributes traffic across multiple targets based on eg. which server is busier. come default with EC2,
+     ECS (elastic compute cloud: Amazon Web Services, that allows users to rent virtual computers on which to run
+     their own computer applications) and Lambda.
    - there are 3 types of load balancers:
      1. application load balancers(ALB):
      2. NLB: Network load balancers
@@ -385,7 +387,7 @@ these services are for organizations who wanna move to cloud.
      2. S3 glacier deep archive
         ![S3 glacier price](./assets/S3glacier.png?raw=true "S3 glacier price")
 
-3. Amazon EBS Elastic Blast Store:
+3. Amazon EBS Elastic Block Store:
    - it is bassically presistent block storage for Amazon EC2.
    - its block storage designed to connect single EC2 instance that can scale to support petabytes of data and multiple volume types based on need.
      - data is durable.
@@ -404,7 +406,8 @@ these services are for organizations who wanna move to cloud.
 
    - EBS is an option to attach storage to EC2 instance but EFS is anthoer approach.
    - Unlike EBS this can be attached to multiple instances at same time.
-   - its a fully managed NFS (Network File System is a distributed file system protocol that lets users access files over a network similar to the way they access local storage) file system. designed specificly for linux workload.
+   - its a fully managed NFS (Network File System is a distributed file system protocol that lets users access files
+     over a network similar to the way they access local storage) file system. designed specificly for linux workload.
    - like EBS it supports petabytes of data.
    - saves data across multiple AZ.
    - two different storage classes:
@@ -907,3 +910,5 @@ these services are for organizations who wanna move to cloud.
   2. Technologies approx. 33%. like AWS infrastructure and AWS services.
   3. Security and compliance 22%. eg. shared responsibility model and how you access compliance information reports.
   4. Billing and pricing. tools like cost explorer. and TCO calculator 15%.
+
+1-10: 2 wrong

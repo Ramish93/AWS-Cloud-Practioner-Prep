@@ -85,7 +85,8 @@ software as a service: email provider could be a SAAS service we are using them 
     - it also tries to predic cost for upcoming 3 months.
     - gives recommendations for cost optimizations by UI or by API.
 - AWS Budgets:
-  - utilizes data from cost explorer and track all AWS services, track cost per service, service usage, reserved instance utilization, coverage and saving plans.
+  - utilizes data from cost explorer and track all AWS services, track cost per
+    service, service usage, reserved instance utilization, coverage and saving plans.
 - Cost planing tools:
 
   - (deprecated now)AWS TCO (total cost of ownership) calculator. for organizations considering from their own data center to cloud. help make a case to transition to cloud. Based on a lot of customer feedback, the AWS TCO Calculator has been replaced by the AWS Pricing Calculator.
@@ -389,7 +390,8 @@ these services are for organizations who wanna move to cloud.
 
 3. Amazon EBS Elastic Block Store:
    - it is bassically presistent block storage for Amazon EC2.
-   - its block storage designed to connect single EC2 instance that can scale to support petabytes of data and multiple volume types based on need.
+   - its block storage designed to connect single EC2 instance that can scale to support
+     petabytes of data and multiple volume types based on need.
      - data is durable.
      - allows users to take snapshots of data. like if you want to have data in backup aswell.
      - make sure to config encryption.
@@ -924,4 +926,16 @@ these services are for organizations who wanna move to cloud.
   4. Billing and pricing. tools like cost explorer. and TCO calculator 15%.
 
 <!-- 1-10: 2 wrong
-11-20 0.5 wrong -->
+11-20 0.5 wrong
+21-30 2.5 wrong
+31-40 1.5 wrong
+41-50 1 wrong
+2 wrong.
+
+1-10: 2.5 wrong
+11-20 0.5 wrong
+21-30 2.5 wrong
+31-40 1.5 wrong
+41-50 1 wrong
+2 wrong.
+-->

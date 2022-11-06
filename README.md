@@ -924,18 +924,3 @@ these services are for organizations who wanna move to cloud.
   2. Technologies approx. 33%. like AWS infrastructure and AWS services.
   3. Security and compliance 22%. eg. shared responsibility model and how you access compliance information reports.
   4. Billing and pricing. tools like cost explorer. and TCO calculator 15%.
-
-<!-- 1-10: 2 wrong
-11-20 0.5 wrong
-21-30 2.5 wrong
-31-40 1.5 wrong
-41-50 1 wrong
-2 wrong.
-
-1-10: 2.5 wrong
-11-20 0.5 wrong
-21-30 2.5 wrong
-31-40 1.5 wrong
-41-50 1 wrong
-2 wrong.
--->

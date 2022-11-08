@@ -604,7 +604,7 @@ these services are for organizations who wanna move to cloud.
 - security and compliance is shared responsibility of AWS and customer.
   1. AWS is responsible for Security of Cloud, customer is responsible for security in the cloud.
      ![shared Responsibility](./assets/sharedResponsibility.png?raw=true "sharedResponsibility")
-- AWS manages the security of the following assets:
+- **AWS manages the security of the following assets:**
 
 – Facilities
 
@@ -614,7 +614,7 @@ these services are for organizations who wanna move to cloud.
 
 – Virtualization infrastructure
 
-Customers are responsible for the security of the following assets:
+- **Customers are responsible for the security of the following assets:**
 
 – Amazon Machine Images (AMIs)
 

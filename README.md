@@ -589,9 +589,20 @@ these services are for organizations who wanna move to cloud.
 - configs are going to be code and they will deploy on same server, chef and puppet will manage that for you
 - works hybrid, you can work with it on cloud and in own datacenter.
 - its make of 3 subservices:
+
   1. AWS opsworks Chef Automate: configurations management your app that utilizes chefs automate.
   2. AWS opsworks for puppet enterprise: configurations management your app that utilizes puppets automate.
   3. AWS opsworks stacks: it allows you to manage your app in layers and you can manage them with chef recepies .
+
+- Amazon Connect:
+  provides a seamless omnichannel experience for agents and managers for voice, chat,
+  and task management to ensure customers are routed with their conversation's full context
+  or work across applications when switching channels.
+- An Amazon WorkSpace:
+  is a cloud-based virtual desktop that can act as a
+  replacement for a traditional desktop. A WorkSpace is available as a bundle of operating system,
+  compute resources, storage space, and software applications that allow a user to perform
+  day-to-day tasks just like using a traditional desktop.
 
 # Inroduction to Security and Architecture on AWS:(3rd blog)
 

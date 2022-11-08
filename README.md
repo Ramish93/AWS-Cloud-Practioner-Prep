@@ -150,7 +150,7 @@ these services are for organizations who wanna move to cloud.
 3. AWS SDK:
    - programming access to manage AWS resources.
      - this is where we use a language to script the process how we intract with Aws.
-     - usage: for repeated task or automation + if you have an custom app adk would be great choice to let that app intract with AWS services.
+     - usage: for repeated task or automation + if you have an custom app sdk would be great choice to let that app intract with AWS services.
      - languages support:
        ![ sdk languages](./assets/sdklanguages.png?raw=true " sdk languages")
 
@@ -406,7 +406,7 @@ these services are for organizations who wanna move to cloud.
           - its for if we have frequently accessed data.
 4. EFS Amazon Elastic File System:
 
-   - EBS is an option to attach storage to EC2 instance but EFS is anthoer approach.
+   - EBS is an option to attach storage to EC2 instance but EFS is another approach.
    - Unlike EBS this can be attached to multiple instances at same time.
    - its a fully managed NFS (Network File System is a distributed file system protocol that lets users access files
      over a network similar to the way they access local storage) file system. designed specificly for linux workload.
@@ -575,7 +575,7 @@ these services are for organizations who wanna move to cloud.
    - it has a decent dashboard for UI.
 6. Amazon cloud watch:
 
-   - provides metrics, logs, alarams for your infrastructure.
+   - provides metrics, logs, alarms for your infrastructure.
    - collects logs, metrics like number of users in a load balancer, eventsfrom most AWS services.
    - enables alarams based on metrics. like you can set alaram to see things are working as expected.
    - provides visualization capabilities for matrics. charts etc and you can make custom dashboards.
@@ -794,7 +794,8 @@ these services are for organizations who wanna move to cloud.
   - Auto Scaling Group
 
     - set of EC2 instances with rules for scaling and management,
-    - there is a launch template defines the instace config for the group. if you know you want Windows server with specific configs you can define all that in this template.
+    - there is a launch template defines the instace config for the group. if you
+      know you want Windows server with specific configs you can define all that in this template.
     - you can define min, max and desired number of instances.
     - performs health checks on each instance.
     - Exists within 1 or more AZ in single reagion. usually multiple AZ for fault tolerance.

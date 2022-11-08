@@ -130,7 +130,7 @@ software as a service: email provider could be a SAAS service we are using them 
 these services are for organizations who wanna move to cloud.
 
 - aws quick start: docs for step by step implimenting any common tech platform into aws. good for orgs who just wanna know if they are deploying in a good manner.
-- Aws partner network consulting partner: thye dont work for aws but work for a company that is approved from aws, orgs can hire them to imliment a solution.
+- Aws partner network consulting partner: thye dont work for aws but work for a company that is approved from aws, orgs can hire them to impliment a solution.
 - Aws profesional service: if you wanna work with AWS engineers.
 
 # Understanding AWS core Services (2nd blog):

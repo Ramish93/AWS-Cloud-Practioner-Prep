@@ -236,7 +236,7 @@ these services are for organizations who wanna move to cloud.
 
 - gives you dedicated physical server in datacenter, most expensive option.
 - if you have a per-server licencing model. and you want to abile by terms of licence.
-- also some compliance require a dedicated host. so in that case too use this.
+- also some compliance require a dedicated host, and you can have physically seperated virtual machines. so in that case too use this.
   ![EC2 buy Options](./assets/EC2buyOptions.png?raw=true "EC2 buy Options")
   ![EC2 buy Options](./assets/EC2buyOptions1.png?raw=true "EC2 buy Options")
 - here is an example of prices for Reserved Instances. as you can see the saving in it.
@@ -379,7 +379,8 @@ these services are for organizations who wanna move to cloud.
    - S3 Transfer Acceleration: it enables you to upload files faster because of edge locations as part of amazon cloud front.
 2. Amazon S3 Glacier:
 
-   - its designed to archive data with S3 as a separate storage class. eg. your org has data that you wont access regularly but you need to store it for long time. this is usecase for s3 glacier.
+   - its designed to archive data with S3 as a separate storage class. eg. your org has data that you wont access regularly
+     but you need to store it for long time. this is usecase for s3 glacier.
    - it offers configurable retrival times. you pay more/ less for quick or slow retirival.
    - you can use lifecycle of s3 to transition data here.
    - you can upload data here with AWS console but to retrieve you have to use programming.
@@ -439,7 +440,7 @@ these services are for organizations who wanna move to cloud.
 
 1. Amazon RDS relational Database service:
 
-   - takes platform as a service approach.
+   - takes platform as a service approach. is not very customizable eg cant customize database engines.
    - fully managed service. handles provisioning and, patching, backup and recovery of your database for you which consume quiet some time.
    - supports deployment across multiple AZ.
    - support read replicas for some platforms. you can scale out (horizontal scaling) your database for apps that are using this database.
@@ -603,6 +604,33 @@ these services are for organizations who wanna move to cloud.
 - security and compliance is shared responsibility of AWS and customer.
   1. AWS is responsible for Security of Cloud, customer is responsible for security in the cloud.
      ![shared Responsibility](./assets/sharedResponsibility.png?raw=true "sharedResponsibility")
+- AWS manages the security of the following assets:
+
+– Facilities
+
+– Physical security of hardware
+
+– Network infrastructure
+
+– Virtualization infrastructure
+
+Customers are responsible for the security of the following assets:
+
+– Amazon Machine Images (AMIs)
+
+– Operating systems
+
+– Applications
+
+– Data in transit
+
+– Data at rest
+
+– Data stores
+
+– Credentials
+
+– Policies and configuration
 
 2. AWS well-architected framework: (probably memorize them)
 

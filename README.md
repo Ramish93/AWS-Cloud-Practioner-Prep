@@ -604,6 +604,17 @@ these services are for organizations who wanna move to cloud.
   compute resources, storage space, and software applications that allow a user to perform
   day-to-day tasks just like using a traditional desktop.
 
+- AppStream 2.0:
+  is a fully managed application streaming service that
+  provides users instant access to their desktop applications from anywhere.
+  AppStream 2.0 simplifies application management, improves security, and reduces
+  costs by moving a company's applications from their users' physical devices to
+  the AWS Cloud.
+- AWS Service Catalog: can be used to create & deploy portfolio of products
+  within AWS infrastructure. This helps to create consistent resources within
+  AWS infrastructure with quick deployment. whereas AWS CodeDeploy is a
+  managed service for automating software deployment
+
 # Inroduction to Security and Architecture on AWS:(3rd blog)
 
 1. Acceptable use policy: like accept agreement when you sign up.

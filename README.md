@@ -108,7 +108,10 @@ software as a service: email provider could be a SAAS service we are using them 
   - AWS personal Health dashboard:
     - provides alerts and remediations guidence with aws is experience an event that may effect you. like a power shortage or cyber attack. this is where you'll know about it.
   - Aws trusted advisor:
-    - automated tool to check aws usage against best practice. so always impliment solutions as trusted advisor provides. different checks are provided according to the support tier plan. but all customers get access to 7 core support checks with advisor. the checks are divided into 5 parts.
+    - automated tool to check aws usage against best practice. so always impliment
+      solutions as trusted advisor provides. different checks are provided according
+      to the support tier plan. but all customers get access to 7 core support checks
+      with advisor. the checks are divided into 5 parts.
       Cost optimizations, Performance, Security, Fault tolerance, Service limits.
 
 * AWS support plan tiers:
@@ -430,6 +433,10 @@ these services are for organizations who wanna move to cloud.
    - its a data migration service. usually petabytes of data physically. meaning you get a physical device from AWS to connect to your network and upload.
 6. Aws snowmobile.
    - if you want physically migrate exabytes of data. it will be like a shiping container size device.
+7. AWS Snowcone:
+   - Snowcone is portable, rugged, and secure. You can use
+     Snowcone to collect, process, and move data to AWS, either offline by shipping the
+     device, or online with AWS DataSync.
 
 - comparison of these 2:
   ![S3 snow ball and mobile](./assets/snowballMobil.png?raw=true "S3 snow ball and mobile")
@@ -614,6 +621,38 @@ these services are for organizations who wanna move to cloud.
   within AWS infrastructure. This helps to create consistent resources within
   AWS infrastructure with quick deployment. whereas AWS CodeDeploy is a
   managed service for automating software deployment
+- AWS Outpost:
+  AWS Outposts and Azure Stack are similar in that they essentially take public cloud
+  computing services like AWS infrastructure, AWS services, APIs, and tools and
+  extend them into on-premises data centers.
+
+- AWS Kendra:
+  - is a highly accurate and easy to use enterprise search service that’s
+    powered by machine learning. Amazon Kendra enables developers to add search capabilities to their applications so their end users can discover information stored
+    within the vast amount of content spread across their company. When you type a
+    question, the service uses machine learning algorithms to understand the context and
+    return the most relevant results.
+- Amazon Kinesis:
+  - you can ingest real-time data such as video, audio,
+    application logs, website clickstreams, and IoT telemetry data for machine learning,
+    analytics, and other applications, process and analyze
+    data as it arrives and respond instantly instead of having to wait until all your data is
+    collected before the processing can begin.
+    - **Amazon Kinesis Data Analytics** is the easiest way to process data streams in real
+      time with SQL or Apache Flink
+    - **Amazon Kinesis Data Firehose** is the easiest way to capture, transform, and load data
+      streams into AWS data stores for near real-time analytics
+    - **Amazon Kinesis video streams** - makes it easy to securely stream media from
+      connected devices to AWS for storage, analytics, machine learning (ML), playback, and
+      other processing
+- Amazon Elastic Kubernetes Service (Amazon EKS)
+- is a managed Kubernetes service that makes it easy for you to run Kubernetes
+  on AWS and on-premises. Kubernetes is an open-source system for automating
+  deployment, scaling, and management of containerized applications.
+- Amazon Open Search Service:
+  - makes it easy to deploy, secure, operate, and scale Elasticsearch to search,
+    analyze, and visualize data in real-time. With Amazon Elasticsearch Service, you get easy-to-use APIs
+    and real-time analytics capabilities to power use-cases such as log analytics, full-text search, a
 
 # Inroduction to Security and Architecture on AWS:(3rd blog)
 
@@ -770,10 +809,13 @@ these services are for organizations who wanna move to cloud.
    - being able to query large-scale data within S3.
    - write query just using standered SQL.
    - charged basied on data you scanned during query.
-2. Amazon Quicksight: fully interlligent business intelligence service enabling dynamic data dashboards that you stored in AWS Redshift and others.
-   - many use models: one is per-user and per-session pricing model. so there are different versions with different capabilities and cost.
+2. Amazon Quicksight: fully interlligent business intelligence service enabling
+   dynamic data dashboards that you stored in AWS Redshift and others.
+   - many use models: one is per-user and per-session pricing model.
+     so there are different versions with different capabilities and cost.
 3. Amazon CloudSearch: fully managed search service for custom applications.
-   - if you wannt make application for custom search like alot of pdf documents etc. and show data to users it can scale large data.
+   - if you wannt make application for custom search like alot of pdf documents etc.
+     and show data to users it can scale large data.
    - charged per-hour and instance type search infrastructure.
 
 ## Integrating AI and Machine Learning:

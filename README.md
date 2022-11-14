@@ -532,12 +532,32 @@ these services are for organizations who wanna move to cloud.
      2. FIFO first in first out queue. processes messages in order.
 3. AWS Step functions:
    - serverless workflow management service.
+   - Step Functions provides a graphical console to arrange and visualize the components of
+     your application as a series of steps. This makes it simple to build and run multi-step applications.
+     Step Functions automatically triggers and tracks each step, and retries when there are errors, so you
    - it enables oschestration of workflow through fully managed service.
    - can support complex workflows including error handling.
    - charged per state along with other services that you use.
    - workflows are defined using Amazon states language.
    - out of box work with other amazon services. like compute services, lambda,
      database services, SQS and SNS, data processing services and machine learning services.
+4. Amazon MQ:
+   - is a managed message broker service for Apache ActiveMQ and RabbitMQ that makes it
+     easy to set up and operate message brokers in the cloud. Message brokers allow different software
+     systems–often using different programming languages, and on different platforms–to communicate
+     and exchange information.
+5. Amazon AppFlow:
+   - is a fully managed integration service that enables you to securely transfer data
+     between Software-as-a-Service (SaaS) applications like Salesforce, Zendesk, Slack, and ServiceNow, and
+     AWS services like Amazon S3 and Amazon Redshift, in just a few clicks. -
+   - automatically encrypts data in motion, and allows users to restrict data from flowing over the public
+     Internet for SaaS applications
+6. Amazon Simple Workflow Service (Amazon SWF):
+   - helps developers build, run, and scale background
+     jobs that have parallel or sequential steps. You can think of Amazon SWF as a fully-managed state
+     tracker and task coordinator in the cloud. If your application’s steps take more than 500 milliseconds to
+     complete, you need to track the state of processing. If you need to recover or retry if a task fails, Amazon
+     SWF can help you.
 
 ## Management and governance services:
 
@@ -649,10 +669,33 @@ these services are for organizations who wanna move to cloud.
 - is a managed Kubernetes service that makes it easy for you to run Kubernetes
   on AWS and on-premises. Kubernetes is an open-source system for automating
   deployment, scaling, and management of containerized applications.
+
 - Amazon Open Search Service:
+
   - makes it easy to deploy, secure, operate, and scale Elasticsearch to search,
     analyze, and visualize data in real-time. With Amazon Elasticsearch Service, you get easy-to-use APIs
     and real-time analytics capabilities to power use-cases such as log analytics, full-text search, a
+
+- Amazon FinSpace:
+  - is a data management and analytics service purpose-built for the financial services
+    industry (FSI). FinSpace reduces the time you spend finding and preparing petabytes of financial data to
+    be ready for analysis from months to minutes.
+- AWS Data Exchange:
+  - makes it easy to find, subscribe to, and use third-party data in the cloud.
+    Once subscribed to a data product, you can use the AWS Data Exchange API to load data directly into
+    Amazon S3 and then analyze it with a wide variety of AWS analytics and machine learning services.
+    academic researchers can conduct studies on
+    climate change by subscribing to data on carbon dioxide emissions
+- Amazon Sumerian:
+  - lets you create and run virtual reality (VR), augmented reality (AR), and 3D
+    applications quickly and easily without requiring any specialized programming or 3D graphics expertise.
+- Amazon Managed Blockchain:
+  - is a fully managed service that makes it easy to create and manage
+    scalable blockchain networks using the popular open source frameworks Hyperledger Fabric and
+    Ethereum.
+- Amazon WorkDocs:
+  - is a fully managed, secure enterprise storage and sharing service with strong
+    administrative controls and feedback capabilities that improve user productivity
 
 # Inroduction to Security and Architecture on AWS:(3rd blog)
 

@@ -664,10 +664,11 @@ these services are for organizations who wanna move to cloud.
   AppStream 2.0 simplifies application management, improves security, and reduces
   costs by moving a company's applications from their users' physical devices to
   the AWS Cloud.
-- AWS Service Catalog: can be used to create & deploy portfolio of products
-  within AWS infrastructure. This helps to create consistent resources within
-  AWS infrastructure with quick deployment. whereas AWS CodeDeploy is a
-  managed service for automating software deployment
+- AWS Service Catalog:
+  - can be used to create & deploy portfolio of products
+    within AWS infrastructure. This helps to create consistent resources within
+    AWS infrastructure with quick deployment. whereas AWS CodeDeploy is a
+    managed service for automating software deployment
 - AWS Outpost:
   AWS Outposts and Azure Stack are similar in that they essentially take public cloud
   computing services like AWS infrastructure, AWS services, APIs, and tools and
@@ -675,9 +676,7 @@ these services are for organizations who wanna move to cloud.
 
 - AWS Kendra:
   - is a highly accurate and easy to use enterprise search service that’s
-    powered by machine learning. Amazon Kendra enables developers to add search capabilities to their applications so their end users can discover information stored
-    within the vast amount of content spread across their company. When you type a
-    question, the service uses machine learning algorithms to understand the context and
+    powered by machine learning. Amazon Kendra enables developers to add search capabilities to their applications so their end users can discover information stored within the vast amount of content spread across their company. When you type a question, the service uses machine learning algorithms to understand the context and
     return the most relevant results.
 - Amazon Kinesis:
   - you can ingest real-time data such as video, audio,
@@ -696,6 +695,9 @@ these services are for organizations who wanna move to cloud.
 - is a managed Kubernetes service that makes it easy for you to run Kubernetes
   on AWS and on-premises. Kubernetes is an open-source system for automating
   deployment, scaling, and management of containerized applications.
+- Red Hat OpenShift Container Platform:
+
+  - enables organizations to develop, deploy, and manage existing, container-based applications across their on-premises and cloud environments.
 
 - Amazon Open Search Service:
 
@@ -723,6 +725,25 @@ these services are for organizations who wanna move to cloud.
 - Amazon WorkDocs:
   - is a fully managed, secure enterprise storage and sharing service with strong
     administrative controls and feedback capabilities that improve user productivity
+- AWS App Runner:
+
+  - is a fully managed service that makes it easy for developers to quickly deploy
+    containerized web applications and APIs, at scale and with no prior infrastructure experience required.
+
+- AWS Fargate:
+
+  - is a compute engine for Amazon ECS that allows you to run containers without having to manage servers or clusters. With AWS Fargate, you no longer have to provision, configure, and scale clusters of virtual machines to run containers.
+
+- AWS Wavelength :
+
+  - combines the high bandwidth and ultralow latency of 5G networks with AWS compute and storage services so that developers can innovate and build a new class of applications.
+
+- VMware Cloud on AWS:
+
+  - is an integrated cloud offering jointly developed by AWS and VMware delivering a highly scalable, secure and innovative service that allows organizations to seamlessly migrate and extend their on-premises VMware vSphere-based environments to the AWS Cloud running on next-generation Amazon Elastic Compute Cloud (Amazon EC2) bare metal infrastructure. with this integrating AWS infrastructure and platform capabilities such as AWS Lambda, Amazon Simple Queue Service (SQS), Amazon S3, Elastic Load Balancing, Amazon RDS, Amazon DynamoDB, on VMware cloud.
+
+- Amazon Connect :
+  - is a self-service, omnichannel cloud contact center service that makes it easy for any business to deliver better customer service at lower cost. Amazon Connect is based on the same contact center technology used by Amazon customer service associates
 
 # Inroduction to Security and Architecture on AWS:(3rd blog)
 

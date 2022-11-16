@@ -84,9 +84,22 @@ software as a service: email provider could be a SAAS service we are using them 
     - there are predefined reports make you can download with your data.
     - it also tries to predic cost for upcoming 3 months.
     - gives recommendations for cost optimizations by UI or by API.
+- AWS Application Cost Profiler:
+- provides you the ability to track the consumption of shared AWS resources
+  used by software applications and report granular cost breakdown across tenant base. You can achieve
+  economies of scale with the shared infrastructure model, while still maintaining a clear line of sight to
+  detailed resource consumption information across multiple dimensions.
 - AWS Budgets:
   - utilizes data from cost explorer and track all AWS services, track cost per
     service, service usage, reserved instance utilization, coverage and saving plans.
+- The AWS Cost & Usage Report :
+
+  - is a single location for accessing comprehensive information about your
+  - AWS costs and usage.
+    The AWS Cost & Usage Report lists AWS usage for each service category used by an account and its
+    IAM users in hourly or daily line items, as well as any tags that you have activated for cost allocation
+    purposes.
+
 - Cost planing tools:
 
   - (deprecated now)AWS TCO (total cost of ownership) calculator. for organizations considering from their own data center to cloud. help make a case to transition to cloud. Based on a lot of customer feedback, the AWS TCO Calculator has been replaced by the AWS Pricing Calculator.
@@ -197,13 +210,25 @@ these services are for organizations who wanna move to cloud.
 - Root device type:
 - there are two different root devices in EC2.
 
-  - Instance Store: storage thats physically attached to host that virtual server is running on for a short amount of time meaning if you shut down your instance store server data will be lost.
+  - Instance Store: storage thats physically attached to host that virtual server
+    is running on for a short amount of time meaning if you shut down your
+    instance store server data will be lost.
 
-  - Elastic Block Store (EBS): prisistent storage that exists seperately from host that v.server is running on, if you shut down data won't be lost. most of you work in done on EBS unless a specific reason.
+  - Elastic Block Store (EBS): prisistent storage that exists seperately from host
+    that v.server is running on, if you shut down data won't be lost.
+    most of you work in done on EBS unless a specific reason.
 
+- Amazon Lightsail:
+  - is designed to be the easiest way to launch and manage a virtual private server with
+    AWS. Lightsail plans include everything you need to jumpstart your project
+    – a virtual machine, SSDbased storage, data transfer, DNS management, and a
+    rtstatic IP address – for a low, predictable price.
 - Amazon Machine Images (AMI):
-- its a template for ec2 service that includes configs, operating systems, data that would go on that specific instance. there are many AMIs that you can leverage.
-- they can be shared across accounts, so if you org has specific version of ubuntu linux that you want to modify in certain way for security reasons, and you wanna attach one storage to it these are example of configs you can make.
+- its a temgplate for ec2 service that includes configs, operating systems,
+  data that would go on that specific instance. there are many AMIs that you can leverage.
+- they can be shared across accounts, so if you org has specific version of ubuntu linux that
+  you want to modify in certain way for security reasons, and you wanna attach one storage to
+  it these are example of configs you can make.
 - you can create you custom AMIs, there is AWS market-place for available AMIs too.
 
 ### EC2 purchase Type:
@@ -216,7 +241,8 @@ these services are for organizations who wanna move to cloud.
    - Reserved instance types:
      1. standered: highest discount, works for steady workloads. so if want bigger instance you are locked in for 1 or 3 year and you cant change.
      2. Convertable reserved instances: allows us to convert attributes equal value to what we already have.
-     3. scheduled instances: If you have predictable but not-steady workload you can use this. like during weekend you have more traffic so you can use this.
+     3. scheduled instances: If you have predictable but not-steady workload you can use this.
+        like during weekend you have more traffic so you can use this.
      - here is a cost model for standered Reserved instances
        ![ EC2 SRIcost](./assets/SRIcost.png?raw=true "EC2 SRIcost")
 3. **Saving plan**
@@ -239,7 +265,8 @@ these services are for organizations who wanna move to cloud.
 
 - gives you dedicated physical server in datacenter, most expensive option.
 - if you have a per-server licencing model. and you want to abile by terms of licence.
-- also some compliance require a dedicated host, and you can have physically seperated virtual machines. so in that case too use this.
+- also some compliance require a dedicated host, and you can have physically seperated
+  virtual machines. so in that case too use this.
   ![EC2 buy Options](./assets/EC2buyOptions.png?raw=true "EC2 buy Options")
   ![EC2 buy Options](./assets/EC2buyOptions1.png?raw=true "EC2 buy Options")
 - here is an example of prices for Reserved Instances. as you can see the saving in it.

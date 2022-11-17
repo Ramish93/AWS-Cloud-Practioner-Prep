@@ -484,6 +484,8 @@ these services are for organizations who wanna move to cloud.
      1. general purpose SSD
      2. Provisioned IOPS SSD.
 
+   - **Amazon Relational Database Service (Amazon RDS)** on VMware lets you deploy managed databases in on-premises VMware environments using the Amazon RDS technology
+
    - platform that it supports:
      1. MySQL
      2. postgresSQL
@@ -493,7 +495,8 @@ these services are for organizations who wanna move to cloud.
      6. Amazon Aurora
         > it was created as an option for RDS, it is MySQL and postgres compatible relational database. its simple and cost efficient.
 
-2. Amazon Aurora
+2. Amazon Aurora:
+   - Amazon Aurora is a MySQL and PostgreSQL compatible relational database engine that combines the speed and availability of high-end commercial databases with the simplicity and cost-effectiveness of open source databases.
 3. Amazon DynamoDB:
 
    - software as a service option.
@@ -525,7 +528,21 @@ these services are for organizations who wanna move to cloud.
    - handles common use cases
      1. database layer caching, meaning a layer of caching between database and app.
      2. session storage.
-6. AWS Database Migration Service/ DMS
+6. Amazon Neptune:
+
+   - is a fast, reliable, fully-managed **graph database** service that makes it easy to build and run applications that work with highly connected datasets. it is a purposebuilt, high-performance graph database engine optimized for storing billions of relationships and querying the graph with milliseconds latency.
+
+7. Amazon QLDB:
+
+   - is a fully serverless managed ledger database that provides a transparent, immutable, and cryptographically verifiable transaction log owned by a central trusted authority. Amazon QLDB tracks each and every application data change and maintains a complete and verifiable history of changes over time. Ledgers are typically used to record a history of economic and financial activity in an organization. however building audit functionality with relational databases is timeconsuming and prone to human error
+
+8. Amazon Timestream:
+
+   - is a fast, scalable, fully managed time series database service for IoT and
+     operational applications that makes it easy to store and analyze trillions of events per day at 1/10th the
+     cost of relational databases.
+
+9. AWS Database Migration Service/ DMS
    - if you have private database and you want to integrate it into RDS?
    - supports one time and continuous migration.
    - out of the box supports many databases.
@@ -1093,11 +1110,25 @@ these services are for organizations who wanna move to cloud.
    - fully managed continuous delivery service.
    - integrate with github
 
-5. AWS CodeStar: a way to bootstrap this entire process for out custom applications.
+5. AWS CodeArtifact:
+
+   - is a fully managed artifact repository service that makes it easy for organizations of any size to securely store, publish, and share software packages used in their software development process. works with , npm, yarn, twine, pip, etc.
+
+6. AWS CodeStar: a way to bootstrap this entire process for out custom applications.
    - workflow tool to automate the use of above developer services.
    - can create complete continuous delivery toolchain with few clicks.
    - dashboard, and configs in console.
    - you are only charged for other services you leverage. its free.
+7. AWS Fault Injection Simulator:
+
+- is a fully managed service for running fault injection experiments on AWS
+  that makes it easier to improve an application’s performance, observability, and resiliency. Fault injection
+  experiments are used in chaos engineering, which is the practice of stressing an application in testing
+  or production environments by creating disruptive events, such as sudden increase in CPU or memory
+
+8. AWS X-Ray:
+
+- helps developers analyze and debug distributed applications in production or under development, such as those built using a microservices architecture.
 
 # The exam:
 

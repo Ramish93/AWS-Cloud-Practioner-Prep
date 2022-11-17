@@ -761,6 +761,13 @@ these services are for organizations who wanna move to cloud.
 
 - Amazon Connect :
   - is a self-service, omnichannel cloud contact center service that makes it easy for any business to deliver better customer service at lower cost. Amazon Connect is based on the same contact center technology used by Amazon customer service associates
+- Amazon AppStream 2.0:
+  - is a fully managed application streaming service. You centrally manage your
+    desktop applications on AppStream 2.0 and securely deliver them to any computer. scale up if needed.
+- Amazon WorkLink:
+  - is a fully managed service that lets you provide your employees with secure, easy access to your internal corporate websites and web apps using their mobile phones. this approach is secure then VPN because internal content is never stored or cached by the browser on employee phones, and employee devices never connect directly to your corporate network.
+- AWS Amplify:
+  - makes it easy to create, configure, and implement scalable mobile applications powered by AWS. Amplify seamlessly provisions and manages your mobile backend and provides a simple framework to easily integrate your backend with your iOS, Android, Web, and React Native frontends.
 
 # Inroduction to Security and Architecture on AWS:(3rd blog)
 

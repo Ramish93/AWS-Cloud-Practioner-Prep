@@ -637,19 +637,25 @@ these services are for organizations who wanna move to cloud.
    - secure way to save environment variables, like multiple apps use same key,
      password you can just save it here.
 5. AWS Control tower:
-   - in AWS organization you can make multiple accounts with same security, logging,
-     make consolidated billing and best practices for that are under control tower.
-   - it centralizes users across all aws accounts.
+
+   - AWS Control Tower automates the set-up of a baseline environment, or landing zone, that is a secure,well-architected multi-account AWS environment. The configuration of the landing zone is based on best practices that have been established by working with thousands of enterprise customers to create a secure environment.
+   - in AWS organization you can make multiple accounts with same security, logging, make consolidated billing and best practices for that are under control tower.
    - can make new AWS accounts based on template.
    - it has guadrails which is if you want any service to never turn off, you config it here.
-   - it has a decent dashboard for UI.
+
+- it has a decent dashboard for UI.
+
 6. Amazon cloud watch:
 
    - provides metrics, logs, alarms for your infrastructure.
    - collects logs, metrics like number of users in a load balancer, eventsfrom most AWS services.
    - enables alarams based on metrics. like you can set alaram to see things are working as expected.
    - provides visualization capabilities for matrics. charts etc and you can make custom dashboards.
-   -
+
+7. AWS Compute Optimizer :
+
+- recommends optimal AWS resources for your workloads to reduce costs
+  and improve performance by using machine learning to analyze historical utilization metrics eg EC2 instances, Amazon EBS volumes, and AWS Lambda functions. Overprovisioning resources can lead to unnecessary infrastructure cost,
 
 7. AWS opsworks:
 

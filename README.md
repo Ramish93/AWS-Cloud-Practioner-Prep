@@ -669,6 +669,10 @@ these services are for organizations who wanna move to cloud.
   2. AWS opsworks for puppet enterprise: configurations management your app that utilizes puppets automate.
   3. AWS opsworks stacks: it allows you to manage your app in layers and you can manage them with chef recepies .
 
+8. AWS Proton:
+
+- is the first fully managed delivery service for container and serverless applications. Platform engineering teams can use AWS Proton to connect and coordinate all the different tools needed for infrastructure provisioning, code deployments, monitoring, and updates.
+
 - Amazon Connect:
   provides a seamless omnichannel experience for agents and managers for voice, chat,
   and task management to ensure customers are routed with their conversation's full context

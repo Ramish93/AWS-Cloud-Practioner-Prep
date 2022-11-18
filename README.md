@@ -953,6 +953,24 @@ these services are for organizations who wanna move to cloud.
    - can translate audio or you speak and it translates imidiately.
    - can intigrate into your custom app.
    - supports 31 languages globally.
+4. Amazon CodeGuru:
+
+- is a developer tool that provides intelligent recommendations to improve code
+  quality and identify an application’s most expensive lines of code. Integrate CodeGuru into your existing software development workflow to automate code reviews during application development and continuously monitor application's performance
+
+6. Amazon Comprehend:
+
+- is a natural language processing (NLP) service that uses machine learning to find insights and relationships in text. it can extracts key phrases, places, people,brands, or events; understands how positive or negative the text is;
+  - Amazon Comprehend Medical. The service can identify medical information, such as medical conditions, medications, dosages etc.
+
+7. Amazon DevOps Guru:
+
+- is a Machine Learning (ML) powered service that makes it easy to improve an
+  application’s operational performance and availability. DevOps Guru detects behaviors that deviate from normal operating patterns so you can identify operational issues long before they impact your customers.
+
+8. Amazon Textract :
+
+- is a service that automatically extracts text and data from scanned documents. Amazon Textract goes beyond simple optical character recognition (OCR) to also identify the contents of fields in forms and information stored in tables.
 
 # Disaster Recovery/DR on AWS:
 

@@ -226,9 +226,7 @@ these services are for organizations who wanna move to cloud.
 - Amazon Machine Images (AMI):
 - its a temgplate for ec2 service that includes configs, operating systems,
   data that would go on that specific instance. there are many AMIs that you can leverage.
-- they can be shared across accounts, so if you org has specific version of ubuntu linux that
-  you want to modify in certain way for security reasons, and you wanna attach one storage to
-  it these are example of configs you can make.
+- they can be shared across accounts, so if you org has specific version of ubuntu linux that you want to modify in certain way for security reasons, and you wanna attach one storage to it these are example of configs you can make.
 - you can create you custom AMIs, there is AWS market-place for available AMIs too.
 
 ### EC2 purchase Type:

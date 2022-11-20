@@ -671,7 +671,7 @@ these services are for organizations who wanna move to cloud.
 
 8. AWS Proton:
 
-- is the first fully managed delivery service for container and serverless applications. Platform engineering teams can use AWS Proton to connect and coordinate all the different tools needed for infrastructure provisioning, code deployments, monitoring, and updates.
+- is the first fully managed delivery service for container and serverless applications. Platform engineering teams can use AWS Proton to connect and coordinate all the different tools needed for CI/CD, infrastructure provisioning, code deployments, monitoring, and updates.
 
 - Amazon Connect:
   provides a seamless omnichannel experience for agents and managers for voice, chat,

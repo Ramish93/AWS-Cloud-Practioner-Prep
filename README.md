@@ -618,8 +618,7 @@ these services are for organizations who wanna move to cloud.
      - operational analysis, like what caused a crash, it will be in logs,
      - troubleshooting
 2. AWS CloudFormation:
-   - if you have specific need for an app like 2 S3 bucket, 4 instance of EC2 etc. and you do it manually in console,
-     maybe you make a mistake, cloudformation solves it.
+   - if you have specific need for an app like 2 S3 bucket, 4 instance of EC2 etc. and you do it manually in console, maybe you make a mistake, cloudformation solves it.
    - no addional charge.
    - it uses templates in two formats, YAML JSON.
    - this is infrastructure as code.
@@ -775,7 +774,11 @@ these services are for organizations who wanna move to cloud.
 - Amazon WorkLink:
   - is a fully managed service that lets you provide your employees with secure, easy access to your internal corporate websites and web apps using their mobile phones. this approach is secure then VPN because internal content is never stored or cached by the browser on employee phones, and employee devices never connect directly to your corporate network.
 - AWS Amplify:
+
   - makes it easy to create, configure, and implement scalable mobile applications powered by AWS. Amplify seamlessly provisions and manages your mobile backend and provides a simple framework to easily integrate your backend with your iOS, Android, Web, and React Native frontends.
+
+- aws transit gateway:
+  - connects your Amazon Virtual Private Clouds (VPCs) and on-premises networks through a central hub. This connection simplifies your network and puts an end to complex peering relationships. Transit Gateway acts as a highly scalable cloud router—each new connection is made only once.
 
 # Inroduction to Security and Architecture on AWS:(3rd blog)
 
@@ -1109,8 +1112,7 @@ these services are for organizations who wanna move to cloud.
 
    - if you are an organization and want to use services on AWS.
    - if you make a robust service that meets all best practises org and industry you can let other use it.
-   - supports a lifecycle for services released in catalog. eg. if you update verion of your service
-     everybody using it will be notified.
+   - supports a lifecycle for services released in catalog. eg. if you update verion of your service everybody using it will be notified.
 
 2. AWS marketplaces:
    - catalog software to run on AWS but from third party providers.

@@ -574,8 +574,7 @@ these services are for organizations who wanna move to cloud.
      2. FIFO first in first out queue. processes messages in order.
 3. AWS Step functions:
    - serverless workflow management service.
-   - Step Functions provides a graphical console to arrange and visualize the components of
-     your application as a series of steps. This makes it simple to build and run multi-step applications.
+   - Step Functions provides a graphical console to arrange and visualize the components of your application as a series of steps. This makes it simple to build and run multi-step applications.
      Step Functions automatically triggers and tracks each step, and retries when there are errors, so you
    - it enables oschestration of workflow through fully managed service.
    - can support complex workflows including error handling.
@@ -935,8 +934,8 @@ these services are for organizations who wanna move to cloud.
    - being able to query large-scale data within S3.
    - write query just using standered SQL.
    - charged basied on data you scanned during query.
-2. Amazon Quicksight: fully interlligent business intelligence service enabling
-   dynamic data dashboards that you stored in AWS Redshift and others.
+2. Amazon Quicksight: is a cloud-scale business intelligence (BI) service that you can use to deliver easy-to-understand insights to the people who you work with, wherever they are. it connects to your data in the cloud and combines data from many different sources. that you stored in AWS Redshift and others.
+   - allows everyone in your organization to understand your data by asking questions in natural language
    - many use models: one is per-user and per-session pricing model.
      so there are different versions with different capabilities and cost.
 3. Amazon CloudSearch: fully managed search service for custom applications.
